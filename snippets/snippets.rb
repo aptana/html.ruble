@@ -239,6 +239,7 @@ with_defaults :scope => 'text.html', :input => :none, :output => :insert_as_snip
 
   command 'Emphasize' do |cmd|
     cmd.key_binding = 'M1+M2+i'
+    cmd.input = :selection
     cmd.invoke do |context|
       selection = ENV['TM_SELECTED_TEXT'] || ''
       if selection.length > 0
@@ -327,6 +328,7 @@ with_defaults :scope => 'text.html', :input => :none, :output => :insert_as_snip
   
   command 'Strong' do |cmd|
     cmd.key_binding = 'M1+M2+b'
+    cmd.input = :selection
     cmd.invoke do |context|
       selection = ENV['TM_SELECTED_TEXT'] || ''
       if selection.length > 0
@@ -352,6 +354,7 @@ with_defaults :scope => 'text.html', :input => :none, :output => :insert_as_snip
       else
         "<${1:p}>$0</${1:p}>"
       end
+    end
   end
   
   command 'Body' do |cmd|

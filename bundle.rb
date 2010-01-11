@@ -5,15 +5,11 @@ require 'radrails'
 bundle 'HTML' do |bundle|
   bundle.author = "Christopher Williams, ? et al"
   bundle.copyright = <<END
-© Copyright 2010 Aptana Inc. Distributed under GPLv3 and Aptana Source license.
+(c) Copyright 2010 Aptana Inc. Distributed under GPLv3 and Aptana Source license.
 
-Portions © Copyright 2006 ??, distributed under the terms of the MIT License.
+Portions (c) Copyright 2006, distributed under the terms of the MIT License.
 END
-
-  bundle.description = <<END
-Support for HTML, converted from TextMate to RadRails by Aptana.
-END
-
+  bundle.description = 'Support for HTML, converted from TextMate to RadRails by Aptana.'
   bundle.repository = "git@github.com:aptana/html-rrbundle.git"
 
   # most commands install into a dedicated rails menu
@@ -30,8 +26,10 @@ END
 #    menu.separator
 #    menu.separator
 #    menu.separator
-
-    # FIXME This doesn't seem to work. Maybe we can't handle snippets?
+    menu.menu 'Format' do |format|
+      format.command 'Strong'
+      format.command 'Emphasize'
+    end
     menu.menu 'Conditional Comments' do |comments|
       comments.command 'IE Conditional Comment: Internet Explorer 5.0 only'
       comments.command 'IE Conditional Comment: Internet Explorer 5.5 only'
@@ -42,7 +40,6 @@ END
       comments.command 'IE Conditional Comment: Internet Explorer'
       comments.command 'IE Conditional Comment: NOT Internet Explorer'
     end
-    
     menu.separator
     menu.command 'Wrap Selection in Open/Close Tag'
     menu.command 'Wrap in <?= ... ?>'
