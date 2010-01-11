@@ -72,22 +72,17 @@ end
 
 snippet 'Embed QT Movie' do |s|
   s.trigger = 'movie'
-  s.expansion = '<object width="$2" height="$3" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
-	<param name="src" value="$1"${TM_XHTML}>
-	<param name="controller" value="$4"${TM_XHTML}>
-	<param name="autoplay" value="$5"${TM_XHTML}>
+  s.expansion = '<object width="${2:320}" height="${3:240}" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
+	<param name="src" value="${1:movie.mov}"/>
+	<param name="controller" value="${4:true}"/>
+	<param name="autoplay" value="${5:true}"/>
 	<embed src="${1:movie.mov}"
 		width="${2:320}" height="${3:240}"
 		controller="${4:true}" autoplay="${5:true}"
 		scale="tofit" cache="true"
 		pluginspage="http://www.apple.com/quicktime/download/"
-	${TM_XHTML}>
+	/>
 </object>'
-end
-
-# FIXME No tab trigger, probably needs to become command
-snippet 'Emphasize' do |s|
-  s.expansion = '${0:${TM_SELECTED_TEXT/\A<em>(.*)<\/em>\z|.*/(?1:$1:<em>$0<\/em>)/m}}'
 end
 
 snippet 'enter' do |s|
@@ -100,15 +95,6 @@ snippet 'escape' do |s|
   s.expansion = '&#x238B;'
 end
 
-snippet 'Fieldset' do |s|
-  s.trigger = 'fieldset'
-  s.expansion = '<fieldset id="${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g}" ${2:class="${3:}"}>
-	<legend>${1:$TM_SELECTED_TEXT}</legend>
-	
-	$0
-</fieldset>'
-end
-
 snippet 'HTML Ñ 4.01 Transitional' do |s|
   s.trigger = 'doctype'
   s.expansion = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
@@ -116,49 +102,9 @@ snippet 'HTML Ñ 4.01 Transitional' do |s|
 '
 end
 
-snippet 'IE Conditional Comment: Internet Explorer 5.0 only' do |s|
-  s.trigger = '!'
-  s.expansion = '<!--[if IE 5.0]>${1:${TM_SELECTED_TEXT:   IE Conditional Comment: Internet Explorer 5.0 only }}<![endif]-->$0'
-end
-
-snippet 'IE Conditional Comment: Internet Explorer 5.5 only' do |s|
-  s.trigger = '!'
-  s.expansion = '<!--[if IE 5.5000]>${1:${TM_SELECTED_TEXT:   IE Conditional Comment: Internet Explorer 5.5 only }}<![endif]-->$0'
-end
-
-snippet 'IE Conditional Comment: Internet Explorer 5.x' do |s|
-  s.trigger = '!'
-  s.expansion = '<!--[if lt IE 6]>${1:${TM_SELECTED_TEXT:  IE Conditional Comment: Internet Explorer 5.x      }}<![endif]-->$0'
-end
-
-snippet 'IE Conditional Comment: Internet Explorer 6 and below' do |s|
-  s.trigger = '!'
-  s.expansion = '<!--[if lte IE 6]>${1:${TM_SELECTED_TEXT: IE Conditional Comment: Internet Explorer 6 and below }}<![endif]-->$0'
-end
-
-snippet 'IE Conditional Comment: Internet Explorer 6 only' do |s|
-  s.trigger = '!'
-  s.expansion = '<!--[if IE 6]>${1:${TM_SELECTED_TEXT:     IE Conditional Comment: Internet Explorer 6 only   }}<![endif]-->$0'
-end
-
-snippet 'IE Conditional Comment: Internet Explorer 7 and above' do |s|
-  s.trigger = '!'
-  s.expansion = '<!--[if gte IE 7]>${1:${TM_SELECTED_TEXT: IE Conditional Comment: Internet Explorer 7 and above }}<![endif]-->$0'
-end
-
-snippet 'IE Conditional Comment: Internet Explorer' do |s|
-  s.trigger = '!'
-  s.expansion = '<!--[if IE]>${1:${TM_SELECTED_TEXT:       IE Conditional Comment: Internet Explorer          }}<![endif]-->$0'
-end
-
-snippet 'IE Conditional Comment: NOT Internet Explorer' do |s|
-  s.trigger = '!'
-  s.expansion = '<!--[if !IE]><!-->${1:${TM_SELECTED_TEXT:  IE Conditional Comment: NOT Internet Explorer      }}<!-- <![endif]-->$0'
-end
-
 snippet 'Input with Label' do |s|
   s.trigger = 'input'
-  s.expansion = '<label for="${2:${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g}}">$1</label><input type="${3:text/submit/hidden/button}" name="${4:$2}" value="$5"${6: id="${7:$2}"}${TM_XHTML}>
+  s.expansion = '<label for="$2">$1</label><input type="${3:text/submit/hidden/button}" name="$2" value="$5" id="$2"/>
 '
 end
 
@@ -174,7 +120,7 @@ end
 
 snippet 'Option' do |s|
   s.trigger = 'opt'
-  s.expansion = '<option${1: value="${2:option}"}>${3:$2}</option>'
+  s.expansion = '<option value="${1:option}">${1:option}</option>'
 end
 
 snippet 'return' do |s|
@@ -186,7 +132,7 @@ snippet 'right' do |s|
   s.trigger = 'right'
   s.expansion = '&#x2192;'
 end
-
+# FIXME This has nested tab stops and way too many of them!
 snippet 'Select Box' do |s|
   s.trigger = 'select'
   s.expansion = '<select name="${1:some_name}" id="${2:$1}"${3:${4: multiple}${5: onchange="${6:}"}${7: size="${8:1}"}}>
@@ -208,11 +154,6 @@ snippet 'Special: Return Inside Empty Open/Close Tags' do |s|
 '
 end
 
-# FIXME No tab trigger, probably needs to become command
-snippet 'Strong' do |s|
-  s.expansion = '${0:${TM_SELECTED_TEXT/\A<strong>(.*)<\/strong>\z|.*/(?1:$1:<strong>$0<\/strong>)/m}}'
-end
-
 snippet 'tab' do |s|
   s.trigger = 'tab'
   s.expansion = '&#x21E5;'
@@ -223,20 +164,9 @@ snippet 'up' do |s|
   s.expansion = '&#x2191;'
 end
 
-# FIXME No tab trigger, probably needs to become command
-snippet 'Wrap in <?= ... ?>' do |s|
-  s.expansion = 'text.html string'
-  s.expansion = '<?= $TM_SELECTED_TEXT ?>'
-end
-
-# FIXME No tab trigger, probably needs to become command
-snippet 'Wrap Selection in Open/Close Tag' do |s|
-  s.expansion = '<${1:p}>$TM_SELECTED_TEXT</${1/\s.*//}>'
-end
-
 snippet 'Input' do |s|
   s.trigger = 'input'
-  s.expansion = '<input type="${1:text/submit/hidden/button}" name="${2:some_name}" value="$3"${4: id="${5:$2}"}${TM_XHTML}>'
+  s.expansion = '<input type="${1:text/submit/hidden/button}" name="${2:some_name}" value="$3" id="${2:some_name}"/>'
 end
 
 snippet 'Text Area' do |s|
@@ -244,8 +174,8 @@ snippet 'Text Area' do |s|
   s.expansion = '<textarea name="${1:Name}" rows="${2:8}" cols="${3:40}">$0</textarea>'
 end
 
-# FIXME No tab trigger, probably needs to become command
 snippet 'Non-Breaking Space' do |s|
+  s.key_binding = 'OPTION+Space'
   s.expansion = '&nbsp;'
 end
 
@@ -256,59 +186,22 @@ end
 
 snippet 'Base' do |s|
   s.trigger = 'base'
-  s.expansion = '<base href="$1"${2: target="$3"}${TM_XHTML}>'
+  s.expansion = '<base href="$1" target="$2"/>'
 end
 
-snippet 'Body' do |s|
-  s.trigger = 'body'
-  s.expansion = '<body id="${1:${TM_FILENAME/(.*)\..*/\L$1/}}"${2: onload="$3"}>
-	$0
-</body>'
-end
-
-# FIXME No tab trigger, probably needs to become command
 snippet 'Br' do |s|
-  s.expansion = '<br${TM_XHTML}>'
-end
-
-snippet 'Div' do |s|
-  s.trigger = 'div'
-  s.expansion = '<div${1: id="${2:name}"}>
-	${0:$TM_SELECTED_TEXT}
-</div>'
-end
-
-snippet 'Form' do |s|
-  s.trigger = 'form'
-  s.expansion = '<form action="${1:${TM_FILENAME/(.*?)\..*/$1_submit/}}" method="${2:get}" accept-charset="utf-8">
-	$0
-
-	<p><input type="submit" value="Continue &rarr;"${TM_XHTML}></p>
-</form>'
-end
-
-snippet 'Heading' do |s|
-  s.trigger = 'h1'
-  s.expansion = '<h1 id="${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g}">${1:$TM_SELECTED_TEXT}</h1>'
-end
-
-snippet 'Head' do |s|
-  s.trigger = 'head'
-  s.expansion = '<head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8"${TM_XHTML}>
-	<title>${1:${TM_FILENAME/((.+)\..*)?/(?2:$2:Page Title)/}}</title>
-	$0
-</head>'
+  s.key_binding = 'CONTROL+ENTER'
+  s.expansion = '<br/>'
 end
 
 snippet 'Link' do |s|
   s.trigger = 'link'
-  s.expansion = '<link rel="${1:stylesheet}" href="${2:/css/master.css}" type="text/css" media="${3:screen}" title="${4:no title}" charset="${5:utf-8}"${TM_XHTML}>'
+  s.expansion = '<link rel="${1:stylesheet}" href="${2:/css/master.css}" type="text/css" media="${3:screen}" title="${4:no title}" charset="${5:utf-8}"/>'
 end
 
 snippet 'Meta' do |s|
   s.trigger = 'meta'
-  s.expansion = '<meta name="${1:name}" content="${2:content}"${TM_XHTML}>'
+  s.expansion = '<meta name="${1:name}" content="${2:content}"/>'
 end
 
 snippet 'Script With External Source' do |s|
@@ -332,15 +225,207 @@ end
 
 snippet 'Table' do |s|
   s.trigger = 'table'
-  s.expansion = '<table border="${1:0}"${2: cellspacing="${3:5}" cellpadding="${4:5}"}>
-	<tr><th>${5:Header}</th></tr>
-	<tr><td>${0:Data}</td></tr>
+  s.expansion = '<table border="${1:0}" cellspacing="${2:5}" cellpadding="${3:5}">
+	<tr><th>${4:Header}</th></tr>
+	<tr><td>${5:Data}</td></tr>
 </table>'
 end
 
-snippet 'Title' do |s|
-  s.trigger = 'title'
-  s.expansion = '<title>${1:${TM_FILENAME/((.+)\..*)?/(?2:$2:Page Title)/}}</title>'
-end
+end # End Snippets with scope 'text.html'
 
+# -----------------------------------------------------------------------------------
+# Snippets that used env vars and needed to be converted to commands
+with_defaults :scope => 'text.html', :input => :none, :output => :insert_as_snippet do |bundle|
+
+  command 'Emphasize' do |cmd|
+    cmd.key_binding = 'M1+M2+i'
+    cmd.invoke do |context|
+      selection = ENV['TM_SELECTED_TEXT'] || ''
+      if selection.length > 0
+        "<em>${1:#{selection}}</em>"
+      else
+        "<em>$0</em>"
+      end
+    end
+  end
+  
+  command 'Fieldset' do |cmd|
+    cmd.trigger = 'fieldset'
+    cmd.invoke do |context|
+      selection = (ENV['TM_SELECTED_TEXT'] || '').length > 0 ? ENV['TM_SELECTED_TEXT'] : 'legend'
+"<fieldset id=\"$2\" class=\"$3\">
+  <legend>${1:#{selection}}</legend>
+  
+  $0
+</fieldset>"
+    end
+  end
+  
+  command 'IE Conditional Comment: Internet Explorer 5.0 only' do |cmd|
+    cmd.trigger = '!'
+    cmd.invoke do |context|
+      value = (ENV['TM_SELECTED_TEXT'] || '').length > 0 ? ENV['TM_SELECTED_TEXT'] : '   IE Conditional Comment: Internet Explorer 5.0 only '
+      "<!--[if IE 5.0]>${1:#{value}}<![endif]-->$0"
+    end
+  end
+  
+  command 'IE Conditional Comment: Internet Explorer 5.5 only' do |cmd|
+    cmd.trigger = '!'
+    cmd.invoke do |context|
+      value = (ENV['TM_SELECTED_TEXT'] || '').length > 0 ? ENV['TM_SELECTED_TEXT'] : '   IE Conditional Comment: Internet Explorer 5.5 only '
+      "<!--[if IE 5.5000]>${1:#{value}}<![endif]-->$0"
+    end
+  end
+  
+  command 'IE Conditional Comment: Internet Explorer 5.x' do |cmd|
+    cmd.trigger = '!'
+    cmd.invoke do |context|
+      value = (ENV['TM_SELECTED_TEXT'] || '').length > 0 ? ENV['TM_SELECTED_TEXT'] : '  IE Conditional Comment: Internet Explorer 5.x      '
+      "<!--[if lt IE 6]>${1:#{value}}<![endif]-->$0"
+    end
+  end
+  
+  command 'IE Conditional Comment: Internet Explorer 6 and below' do |cmd|
+    cmd.trigger = '!'
+    cmd.invoke do |context|
+      value = (ENV['TM_SELECTED_TEXT'] || '').length > 0 ? ENV['TM_SELECTED_TEXT'] : ' IE Conditional Comment: Internet Explorer 6 and below '
+      "<!--[if lte IE 6]>${1:#{value}}<![endif]-->$0"
+    end
+  end
+  
+  command 'IE Conditional Comment: Internet Explorer 6 only' do |cmd|
+    cmd.trigger = '!'
+    cmd.invoke do |context|
+      value = (ENV['TM_SELECTED_TEXT'] || '').length > 0 ? ENV['TM_SELECTED_TEXT'] : '     IE Conditional Comment: Internet Explorer 6 only   '
+      "<!--[if IE 6]>${1:#{value}}<![endif]-->$0"
+    end
+  end
+  
+  command 'IE Conditional Comment: Internet Explorer 7 and above' do |cmd|
+    cmd.trigger = '!'
+    cmd.invoke do |context|
+      value = (ENV['TM_SELECTED_TEXT'] || '').length > 0 ? ENV['TM_SELECTED_TEXT'] : ' IE Conditional Comment: Internet Explorer 7 and above '
+      "<!--[if gte IE 7]>${1:#{value}}<![endif]-->$0"
+    end
+  end
+  
+  command 'IE Conditional Comment: Internet Explorer' do |cmd|
+    cmd.trigger = '!'
+    cmd.invoke do |context|
+      value = (ENV['TM_SELECTED_TEXT'] || '').length > 0 ? ENV['TM_SELECTED_TEXT'] : '       IE Conditional Comment: Internet Explorer          '
+      "<!--[if IE]>${1:#{value}}<![endif]-->$0"
+    end
+  end
+  
+  command 'IE Conditional Comment: NOT Internet Explorer' do |cmd|
+    cmd.trigger = '!'
+    cmd.invoke do |context|
+      value = (ENV['TM_SELECTED_TEXT'] || '').length > 0 ? ENV['TM_SELECTED_TEXT'] : '  IE Conditional Comment: NOT Internet Explorer      '
+      "<!--[if !IE]><!-->${1:#{value}}<!-- <![endif]-->$0"
+    end
+  end
+  
+  command 'Strong' do |cmd|
+    cmd.key_binding = 'M1+M2+b'
+    cmd.invoke do |context|
+      selection = ENV['TM_SELECTED_TEXT'] || ''
+      if selection.length > 0
+        "<strong>${1:#{selection}}</strong>"
+      else
+        "<strong>$0</strong>"
+      end
+    end
+  end
+  
+  command 'Wrap in <?= ... ?>' do |cmd|
+    cmd.scope = 'text.html string'
+    cmd.invoke {|context| "<?= #{ENV['TM_SELECTED_TEXT']} ?>" }
+  end
+  
+  command 'Wrap Selection in Open/Close Tag' do |cmd|
+    cmd.key_binding = "CONTROL+SHIFT+W"
+    cmd.input = :selection
+    cmd.invoke do |context|
+      selection = ENV['TM_SELECTED_TEXT'] || ''
+      if selection.length > 0
+        "<${1:p}>${2:#{selection}}</${1:p}>"
+      else
+        "<${1:p}>$0</${1:p}>"
+      end
+  end
+  
+  command 'Body' do |cmd|
+    cmd.trigger = 'body'
+    cmd.invoke do |context|
+      filename = ENV['TM_FILENAME'] || ''
+      filename.gsub!(/(.*)\..*/, '\1')
+      filename = filename[0,1].downcase + filename[1..-1]
+"<body id=\"${1:#{filename}}\" onload=\"$2\">
+  $0
+</body>"
+    end
+  end
+
+  command 'Div' do |cmd|
+    cmd.trigger = 'div'
+    cmd.invoke do |context|
+      selection = ENV['TM_SELECTED_TEXT'] || ''
+       if selection.length > 0
+"<div id=\"${1:name}\">
+  ${2:#{selection}}
+</div>"
+      else
+"<div id=\"${1:name}\">
+  $0
+</div>"        
+      end
+    end
+  end
+
+  command 'Form' do |cmd|
+    cmd.trigger = 'form'
+    cmd.invoke do |context|
+      filename = ENV['TM_FILENAME'] || ''
+      filename.gsub!(/(.*?)\..*/, '\1_submit')
+"<form action=\"${1:#{filename}}\" method=\"${2:get}\" accept-charset=\"utf-8\">
+  $0
+
+  <p><input type=\"submit\" value=\"Continue &rarr;\"/></p>
+</form>"
+    end
+  end
+
+  command 'Heading' do |cmd|
+    cmd.trigger = 'h1'
+    cmd.invoke do |context|
+      selection = ENV['TM_SELECTED_TEXT'] || ''
+      if selection.length > 0
+        "<h1 id=\"$2\">${1:#{selection}}</h1>"
+      else
+        "<h1 id=\"$1\">$0</h1>"
+      end
+    end
+  end
+
+  command 'Head' do |cmd|
+    cmd.trigger = 'head'
+    cmd.invoke do |context|
+      filename = ENV['TM_FILENAME'] || ''
+      filename.gsub!(/((.+)\..*)?/, '\2')
+"<head>
+  <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\"/>
+  <title>${1:#{filename}}</title>
+  $0
+</head>"
+    end
+  end
+
+  command 'Title' do |cmd|
+    cmd.trigger = 'title'
+    cmd.invoke do |context|
+      filename = ENV['TM_FILENAME'] || ''
+      filename.gsub!(/((.+)\..*)?/, '\2')
+      "<title>${1:#{filename}}</title>"
+    end
+  end
 end
