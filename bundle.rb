@@ -24,7 +24,8 @@ END
 #    menu.command 'Open Document in Running Browser(s)'
 #    menu.command 'Refresh Running Browser(s)'
 #    menu.separator
-#    menu.separator
+    menu.command 'Encrypt Line / Selection (ROT 13)'
+    menu.separator
 #    menu.separator
     menu.menu 'Format' do |format|
       format.command 'Strong'
