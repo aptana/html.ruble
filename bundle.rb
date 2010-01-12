@@ -29,6 +29,10 @@ END
       entities.separator
       entities.command 'Insert Entity...'
     end
+    menu.menu 'URL Escapes' do |escapes|
+      escapes.command 'URL Escape Line / Selection'
+      escapes.command 'URL Unescape Line / Selection'
+    end
     menu.command 'Encrypt Line / Selection (ROT 13)'
     menu.separator
     menu.command 'Insert Open/Close Tag (With Current Word)'
