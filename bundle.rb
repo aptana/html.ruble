@@ -24,10 +24,13 @@ END
 #    menu.command 'Open Document in Running Browser(s)'
 #    menu.command 'Refresh Running Browser(s)'
 #    menu.separator
+    menu.menu 'Entities' do |entities|
+      entities.command 'Decode Entities in Line / Selection'
+    end
     menu.command 'Encrypt Line / Selection (ROT 13)'
     menu.separator
     menu.command 'Insert Open/Close Tag (With Current Word)'
-#    menu.separator
+    menu.separator
     menu.menu 'Format' do |format|
       format.command 'Strong'
       format.command 'Emphasize'
