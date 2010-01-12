@@ -18,9 +18,9 @@ END
     # this menu should be shown when any of the following scopes is active:
     menu.scope = [ "text.html" ]
     
-#    menu.command 'Documentation for Tag'
+    menu.command 'Documentation for Tag'
 #    menu.command 'Validate Syntax (W3C)'
-#    menu.separator
+    menu.separator
 #    menu.command 'Open Document in Running Browser(s)'
 #    menu.command 'Refresh Running Browser(s)'
 #    menu.separator
