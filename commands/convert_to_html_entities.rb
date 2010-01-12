@@ -1,5 +1,6 @@
 require 'radrails'
-    
+require 'encode'
+
 command 'Convert Character / Selection to Entities' do |cmd|
   cmd.key_binding = 'M1+M2+7'
   cmd.scope = 'text.html'
