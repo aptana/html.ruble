@@ -2,7 +2,7 @@
 #
 # An implementation of "Persistent Includes" for RadRails
 # Brad Choate <brad@bradchoate.com> 
-
+require "radrails/ui"
 require 'singleton'
 
 module RadRails
@@ -306,16 +306,13 @@ module RadRails
       #initialize
       init_comment_delimiters()
 
-      require "radrails/ui"
       cstart = (@escape_open).rstrip + ' '
       cend = (' ' + @escape_close).rstrip
       begin
-        RadRails::UI.request_file do | file |
-          print <<-"EOT"
-#{cstart}#tminclude "#{file}"#{cend}
-#{cstart}end tminclude#{cend}
-EOT
-        end
+        file = RadRails::UI.request_file
+"#{cstart}#rrinclude \"#{file}\"#{cend}
+#{cstart}end rrinclude#{cend}
+"
       rescue SystemExit
         exit 200
       end

@@ -39,6 +39,7 @@ END
     menu.command 'Insert Close Tag'
     menu.separator
     menu.menu 'Includes' do |includes|
+      includes.command 'Add Persistent Include'
       includes.command 'Update Document'
     end
     menu.menu 'Format' do |format|
