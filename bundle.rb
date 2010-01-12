@@ -60,6 +60,7 @@ END
     menu.command 'Wrap Selection in Open/Close Tag'
     menu.command 'Wrap Each Selected Line in Open/Close Tag'
     menu.command 'Wrap in <?= ... ?>'
-#    menu.separator
+    menu.separator
+    menu.command 'Strip HTML Tags from Document / Selection'
   end
 end
