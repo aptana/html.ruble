@@ -26,6 +26,8 @@ END
 #    menu.separator
     menu.menu 'Entities' do |entities|
       entities.command 'Decode Entities in Line / Selection'
+      entities.separator
+      entities.command 'Insert Entity...'
     end
     menu.command 'Encrypt Line / Selection (ROT 13)'
     menu.separator
