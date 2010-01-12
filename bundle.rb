@@ -19,7 +19,7 @@ END
     menu.scope = [ "text.html" ]
     
     menu.command 'Documentation for Tag'
-#    menu.command 'Validate Syntax (W3C)'
+    menu.command 'Validate Syntax (W3C)'
     menu.separator
 #    menu.command 'Open Document in Running Browser(s)'
 #    menu.command 'Refresh Running Browser(s)'
