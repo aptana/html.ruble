@@ -1,11 +1,11 @@
 # tminclude.rb
 #
-# An implementation of "Persistent Includes" for TextMate
+# An implementation of "Persistent Includes" for RadRails
 # Brad Choate <brad@bradchoate.com> 
 
 require 'singleton'
 
-module TextMate
+module RadRails
   class Includes
     include Singleton
 
@@ -24,18 +24,18 @@ module TextMate
       # non-capturing for .gsub
       # <!-- #tminclude "/path/to/file" -->
       # <!-- #tminclude "/path/to/file" #arg#="value" ... -->
-      if ENV['TM_COMMENT_END']
+      #if ENV['TM_COMMENT_END']
         escaped_open = Regexp.escape(@escape_open)
         escaped_close = Regexp.escape(@escape_close)
-        @tminclude_regexp = %r{#{escaped_open}\s*#(?:tm|bb)include\s.*?#{escaped_close}.+?#{escaped_open}\s*end (?:tm|bb)include\s*#{escaped_close}}im
+        @tminclude_regexp = %r{#{escaped_open}\s*#(?:tm|bb|rr)include\s.*?#{escaped_close}.+?#{escaped_open}\s*end (?:tm|bb|rr)include\s*#{escaped_close}}im
         # version that captures for .scan
-        @tminclude_regexp_detail = %r{(#{escaped_open}\s*#(?:tm|bb)include\s+['"]([^'"]+)['"](?:\s+(.*?))?#{escaped_close})(.+?)(#{escaped_open}\s*end (?:tm|bb)include\s*#{escaped_close})}im
-      else
-        escaped_open = Regexp.escape(@escape_open)
-        @tminclude_regexp = %r{#{escaped_open} *#(?:tm|bb)include [^\n]*?\n.*?#{escaped_open} +end (?:tm|bb)include *(\n|$)}im
-        # version that captures for .scan
-        @tminclude_regexp_detail = %r{(#{escaped_open} *#(?:tm|bb)include +['"]([^'"]+)['"](?: +([^\n]*?))?)(\n.*?)(#{escaped_open} +end (?:tm|bb)include *(?:\n|$))}im
-      end
+        @tminclude_regexp_detail = %r{(#{escaped_open}\s*#(?:tm|bb|rr)include\s+['"]([^'"]+)['"](?:\s+(.*?))?#{escaped_close})(.+?)(#{escaped_open}\s*end (?:tm|bb|rr)include\s*#{escaped_close})}im
+      #else
+      # escaped_open = Regexp.escape(@escape_open)
+      # @tminclude_regexp = %r{#{escaped_open} *#(?:tm|bb|rr)include [^\n]*?\n.*?#{escaped_open} +end (?:tm|bb|rr)include *(\n|$)}im
+      #  # version that captures for .scan
+      #  @tminclude_regexp_detail = %r{(#{escaped_open} *#(?:tm|bb|rr)include +['"]([^'"]+)['"](?: +([^\n]*?))?)(\n.*?)(#{escaped_open} +end (?:tm|bb|rr)include *(?:\n|$))}im
+      #end
 
       init_global_vars()
     end
@@ -75,7 +75,7 @@ module TextMate
       @global_vars['shortdate'] = @time.strftime("%m/%d/%y").gsub(/0(\d\/)/, '\1')
       @global_vars['abbrevdate'] = @time.strftime("%a, %b %e, %Y").sub(/  /, ' ')
       @global_vars['yearnum'] = @time.year
-      @global_vars['generator'] = "TextMate"
+      @global_vars['generator'] = "RadRails"
 
       if filename = ENV['TM_FILENAME']
         @global_vars['filename'] = filename
@@ -161,7 +161,7 @@ module TextMate
     end
 
     def invoke_interpreter(file, vars)
-      require "#{ENV['TM_SUPPORT_PATH']}/lib/escape.rb"
+      require "escape"
       # run interpreter using file and requested arguments
       filepath = e_sh(ENV['TM_FILEPATH'] || '/dev/null')
       argstr = ''
@@ -271,12 +271,12 @@ module TextMate
 
     public
 
-    def process_persistent_includes
+    def process_persistent_includes(input = STDIN)
       #initialize
       reset
 
       vars = {}
-      doc = STDIN.readlines.join
+      doc = input.readlines.join
       if doc =~ /\#dont_update\#/
         print "This document cannot be updated because it is protected."
         exit 206
@@ -299,18 +299,18 @@ module TextMate
         end
         doc.gsub!(/#docsize#/i, newlen.to_s)
       end
-      print doc
+      doc
     end
 
     def include_command
       #initialize
       init_comment_delimiters()
 
-      require "#{ENV['TM_SUPPORT_PATH']}/lib/ui.rb"
+      require "radrails/ui"
       cstart = (@escape_open).rstrip + ' '
       cend = (' ' + @escape_close).rstrip
       begin
-        TextMate::UI.request_file do | file |
+        RadRails::UI.request_file do | file |
           print <<-"EOT"
 #{cstart}#tminclude "#{file}"#{cend}
 #{cstart}end tminclude#{cend}
