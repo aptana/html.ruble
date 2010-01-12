@@ -38,6 +38,9 @@ END
     menu.command 'Insert Open/Close Tag (With Current Word)'
     menu.command 'Insert Close Tag'
     menu.separator
+    menu.menu 'Includes' do |includes|
+      includes.command 'Update Document'
+    end
     menu.menu 'Format' do |format|
       format.command 'Strong'
       format.command 'Emphasize'
@@ -54,6 +57,7 @@ END
     end
     menu.separator
     menu.command 'Wrap Selection in Open/Close Tag'
+    menu.command 'Wrap Each Selected Line in Open/Close Tag'
     menu.command 'Wrap in <?= ... ?>'
 #    menu.separator
   end
