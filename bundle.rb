@@ -25,6 +25,8 @@ END
 #    menu.command 'Refresh Running Browser(s)'
 #    menu.separator
     menu.menu 'Entities' do |entities|
+      entities.command 'Convert Character / Selection to Entities'
+      entities.command 'Convert Character / Selection to Entities Excl. Tags'
       entities.command 'Decode Entities in Line / Selection'
       entities.separator
       entities.command 'Insert Entity...'
