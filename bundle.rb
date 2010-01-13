@@ -70,6 +70,7 @@ END
     menu.menu 'Includes' do |includes|
       includes.command 'Add Persistent Include'
       includes.command 'Update Document'
+      includes.command 'Help: Persistent Includes'
     end
     menu.menu 'Format' do |format|
       format.command 'Strong'

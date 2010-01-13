@@ -1,0 +1,414 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>About Persistent Includes</title>
+  <link rel="stylesheet" href="print.css"   type="text/css" charset="utf-8" media="print">
+  <style media="screen">
+body {
+	margin: 0;
+	padding: 0;
+
+	color: #000000;
+	background: #FFFFFF;
+	font: 13px "Trebuchet MS", Helvetica, sans-serif;
+}
+#tm_webpreview_header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+
+	color: #FFFFFF;
+	font-size: 200%;
+}
+#tm_webpreview_header #gradient {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 2.6em;
+}
+#tm_webpreview_header .headline {
+	position: relative;
+	z-index: 3;
+	margin: 0;
+
+	padding-left: 1em;
+	padding-top: 1.5ex;
+}
+#tm_webpreview_header #teaser {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 2;
+
+	margin: 0;
+	padding: 0;
+	height: 2.4em;
+	width: 2.4em;
+}
+#tm_webpreview_header #actions {
+	position: absolute;
+	top: 2.3em;
+	right: 0.5ex;
+	
+	z-index: 3;
+	
+	font-size: 8pt;
+}
+#tm_webpreview_header .type {
+	position: absolute;
+	top: 3em;
+	right: 6em;
+	z-index: 2;
+
+	color: rgba(255,255,255,0.5);
+	font-size: 8pt;
+	font-weight: light;
+}
+#theme_switcher {
+	position: absolute;
+	top: 1em;
+	right: 6em;
+	z-index: 4;
+
+	font-size: 50%;
+	opacity: 0.1;
+}
+#theme_switcher:hover {
+	opacity: 1;
+}
+#tm_webpreview_footer {
+	position: fixed;
+	bottom: 0px;
+
+	width: 100%;
+	height: 1.6em;
+
+	margin: 0;
+	padding: 0.3em 2em 0 2em;
+
+	color: #777;
+	background: #292929;
+	text-shadow: #000 1px 3px 3px;
+
+	border-top: 2px solid #000;
+}
+#tm_webpreview_footer p {
+	margin: 0;
+	padding: 0;
+}
+
+#tm_webpreview_content {
+	padding: 0.5em 2em 0.5em 2em;
+/*	margin-top: 6em; */
+}
+
+#tm_webpreview_content :first-child {
+	margin-top: 0;
+}
+
+h1 {
+/*	font-family: "LucidaGrande";*/
+	font-weight: bolder;
+}
+
+h4 {
+	font-style: italic;
+	margin-top: 1ex;
+	margin-bottom: 1ex;
+}
+
+blockquote {
+/*	font-family: "Palatino", "Book Antiqua", Verdana;*/
+	font-style: italic;
+/*	font-size: 106%;*/
+
+	margin: 1em 25px;
+	padding-left: 1em;
+}
+
+code, pre {
+	font-size: 95%;
+	font-family: "LuxiMono", "Bitstream Vera Sans Mono", "Monaco", "Courier New", monospace;
+	word-wrap: break-word;
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+}
+
+pre {
+	padding: 10px 10px 10px 20px;
+}
+
+.pro_table {
+	font-size: 12px;
+}
+.pro_table th {
+	font-weight: bold;
+	padding: 4px 8px 4px 8px;
+	text-align: left;
+}
+.pro_table td {
+	padding: 8px;
+	vertical-align: top;
+}
+.pro_table p {
+	margin: 0;
+}
+.pro_table p + p {
+	margin-top: 1em;
+}
+
+li > p {
+	margin: 1ex 0 1ex 0;
+}
+
+.footnote {
+	vertical-align: top;
+	font-size: 75%;
+	font-weight: bold;
+	text-decoration: none;
+}
+.footnote:before {
+	content: "[";
+	vertical-align: top;
+	font-weight: bold;
+}
+.footnote:after {
+	content: "]";
+	vertical-align: top;
+	font-weight: bold;
+}
+
+div.footnotes {
+   padding: 1em;
+   font-size: 90%;
+}
+
+hr {
+	background: #606060;
+	color:  #606060;
+	border-style: solid;
+	border-color: #606060;
+	border-width: 1px 0 0 0;
+	margin-top: 0;
+}
+
+.alternate {
+	background-color: #F0F0F0;  
+}
+
+/* ================================= */
+/* = Common Stuff for all Commands = */
+/* ================================= */
+
+.bright {
+	background: #FFF;
+	color: #000;
+}
+.bright a {
+	color: #0D2681;
+}
+
+.bright h1 {
+	text-shadow:  #DDDDDD 3px 3px 5px;
+	color: #333;
+}
+.bright h2 {
+	color: #222;
+	text-shadow:  #DDDDDD 3px 3px 5px;
+}
+.bright h3 {
+	color: #333;
+	text-shadow:  #DDDDDD 3px 3px 5px;
+}
+.bright h4 {
+	color: #666;
+}
+
+.bright blockquote {
+	border-left: 4px solid #E6E5DD;
+}
+.bright code {
+	color: #1C360C;
+}
+
+.bright pre {
+	background-color: #f0f0f0;
+	border: 1px solid #cccbba;
+}
+
+.bright .pro_table {
+	border-top: 1px solid #919699;
+	border-left: 1px solid #919699;
+}
+.bright .pro_table th {
+	background: #E2E2E2;
+	border-bottom: 1px solid #919699;
+	border-right: 1px solid #919699;
+}
+.bright .pro_table td {
+	border-bottom: 1px solid #919699;
+	border-right: 1px solid #919699;
+}
+.bright .footnote {
+	color: #525151;
+}
+.bright .footnote:before {
+	color: #525151;
+}
+.bright .footnote:after {
+	color: #525151;
+}
+.bright div.footnotes {
+   background: #F0F0F0;
+}
+
+.bright .alternate {
+	background-color: #F0F0F0;
+}
+  </style>
+</head>
+<body id="tm_webpreview_body" class="bright">
+
+	<div id="tm_webpreview_content" class="bright">
+
+<p>The &#8220;Add Persistent Include&#8221; command allows you to embed an external file inside your HTML document. This inclusion is handled by RadRails itself. Once you&#8217;ve added the include statement, use the &#8220;Update Document&#8221; command to refresh any included files.</p>
+
+<h2>Including Files</h2>
+
+<p>An inclusion is done using a special HTML comment:</p>
+
+<pre><code>&lt;!-- #rrinclude "footer.html" --&gt;
+&lt;!-- end rrinclude --&gt;
+</code></pre>
+
+<p>Once you&#8217;ve updated the document, the contents are pulled inside the inclusion markup:</p>
+
+<pre><code>&lt;!-- #rrinclude "footer.html" --&gt;
+&lt;div class="footer"&gt;Copyright (c) 2006, WebDesignCorp.&lt;/div&gt;
+&lt;!-- end rrinclude --&gt;
+</code></pre>
+
+<p>Note: Included documents are also processed for additional inclusions and placeholders.</p>
+
+<h2>Include Parameters</h2>
+
+<p>You can optionally specify parameters for the included file. Parameters are provided following the filename.</p>
+
+<pre><code>&lt;!-- #rrinclude "header.html" #title#="Home Page" --&gt;
+&lt;!-- end rrinclude --&gt;
+</code></pre>
+
+<p>With a header.html file that looks like this:</p>
+
+<pre><code>&lt;h1 class="header"&gt;#title#&lt;/h1&gt;
+</code></pre>
+
+<p>Producing:</p>
+
+<pre><code>&lt;!-- #rrinclude "header.html" #title#="Home Page" --&gt;
+&lt;h1 class="header"&gt;Home Page&lt;/h1&gt;
+&lt;!-- end rrinclude --&gt;
+</code></pre>
+
+<h2>Placeholders</h2>
+
+<p>The update command also processes document &#8220;placeholders&#8221;. Placeholders are written in this format:</p>
+
+<pre><code>#variable#
+</code></pre>
+
+<p>The following placeholders are available:</p>
+
+<table class="pro_table" border="0" width="100%" cellpadding="5" cellspacing="0">
+<tr><th>Placeholder</th><th>Example Result</th></tr>
+<tr><td><tt>#abbrevdate#    </tt></td><td>Abbreviated date: Sun, Aug 15, 2006</td></tr>
+<tr><td><tt>#basename#      </tt></td><td>Filename without extension.</td></tr>
+<tr><td><tt>#compdate#      </tt></td><td>Compact date: 15-Aug-06</td></tr>
+<tr><td><tt>#creationdate#  </tt></td><td>Creation date: 15-Aug-06</td></tr>
+<tr><td><tt>#creationtime#  </tt></td><td>Creation time:  1:20 PM</td></tr>
+<tr><td><tt>#docsize#       </tt></td><td>Resulting document length in bytes</td></tr>
+<tr><td><tt>#dont_update#   </tt></td><td>Special: presence will prevent document updating</td></tr>
+<tr><td><tt>#filename#      </tt></td><td>Document filename</td></tr>
+<tr><td><tt>#file_extension#</tt></td><td>Document file extension</td></tr>
+<tr><td><tt>#generator#     </tt></td><td>RadRails</td></tr>
+<tr><td><tt>#gmtime#        </tt></td><td>GMT time</td></tr>
+<tr><td><tt>#localpath#     </tt></td><td>Full path to current file</td></tr>
+<tr><td><tt>#localtime#     </tt></td><td>Local computer time</td></tr>
+<tr><td><tt>#longdate#      </tt></td><td>Long Date: Tuesday, August 15, 2006</td></tr>
+<tr><td><tt>#modifieddate#  </tt></td><td>Modified date: 15-Aug-06</td></tr>
+<tr><td><tt>#modifiedtime#  </tt></td><td>Modified time:  1:20 PM</td></tr>
+<tr><td><tt>#monthdaynum#   </tt></td><td>Day of Month: 15</td></tr>
+<tr><td><tt>#monthnum#      </tt></td><td>Month Number: 08</td></tr>
+<tr><td><tt>#shortdate#     </tt></td><td>Short Date: 08/15/06</td></tr>
+<tr><td><tt>#shortusername# </tt></td><td>Login name of current user</td></tr>
+<tr><td><tt>#username#      </tt></td><td>Name of current user</td></tr>
+<tr><td><tt>#yearnum#       </tt></td><td>Current Year: 2006</td></tr>
+</table>
+
+<p>In addition to these, all of the RadRails environment variables (those starting with a &#8220;TM_&#8221; prefix) are available as placeholders. For example:</p>
+
+<pre><code>#organization_name#
+</code></pre>
+
+<p>Will populate using the <code>TM_ORGANIZATION_NAME</code> environment variable.</p>
+
+<h2>Formatting Time</h2>
+
+<p>The date-based placeholders may also specify a format that can be used to customize the date output. For example:</p>
+
+<pre><code>#gmtime %b %e, %Y# (Aug 15, 2006)
+</code></pre>
+
+<h2>Placeholder Example</h2>
+
+<p>If you want to make that footer.html include more useful, you can use placeholders. For example:</p>
+
+<pre><code>&lt;div class="footer"&gt;Copyright (c) #yearnum#, #oragnization_name#.&lt;/div&gt;
+</code></pre>
+
+<p>This would then produce the following, when included and processed:</p>
+
+<pre><code>&lt;!-- #rrinclude "footer.html" --&gt;
+&lt;div class="footer"&gt;Copyright (c) 2006, WebDesignCorp.&lt;/div&gt;
+&lt;!-- end rrinclude --&gt;
+</code></pre>
+
+<h2>Scripted Includes</h2>
+
+<p>It is also possible to produce included content using scripts. If the included file is a script, it is run and the output is placed inside the include block.</p>
+
+<pre><code>&lt;!-- #rrinclude "scripts/header.pl" #class#="huge" --&gt;
+&lt;!-- end rrinclude --&gt;
+</code></pre>
+
+<p>.pl (Perl), .py (Python) and .rb (Ruby) scripts are currently recognized. For the above example, the &#8220;header.pl&#8221; script is run with the following parameters:</p>
+
+<pre><code>header.pl (source_filename) class huge
+</code></pre>
+
+<p>The Perl script in this case can process the parameters like this.</p>
+
+<pre><code>#!/usr/bin/perl
+my ($filename, %args) = @ARGV;
+print "&lt;h1 class='$args{class}'&gt;Header for $filename&lt;/h1&gt;"
+</code></pre>
+
+<p>That would end up producing this:</p>
+
+<pre><code>&lt;!-- #rrinclude "scripts/header.pl" #class#="huge" --&gt;
+&lt;h1 class='huge'&gt;Header for /path/to/example.html&lt;/h1&gt;
+&lt;!-- end rrinclude --&gt;
+</code></pre>
+</div>
+</body>
+</html>
