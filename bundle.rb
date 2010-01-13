@@ -21,6 +21,8 @@ END
     menu.command 'Documentation for Tag'
     menu.command 'Validate Syntax (W3C)'
     menu.separator
+    menu.command 'Open Document in Internal Browser'
+    menu.command 'Open Document in Default Browser'
     menu.command 'Open Document in Running Browser(s)'
     menu.command 'Refresh Running Browser(s)'
     menu.separator
