@@ -64,5 +64,6 @@ END
     menu.command 'Wrap in <?= ... ?>'
     menu.separator
     menu.command 'Strip HTML Tags from Document / Selection'
+    menu.command 'Tidy'
   end
 end
