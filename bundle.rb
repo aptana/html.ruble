@@ -22,7 +22,7 @@ END
     menu.command 'Validate Syntax (W3C)'
     menu.separator
     menu.command 'Open Document in Running Browser(s)'
-#    menu.command 'Refresh Running Browser(s)'
+    menu.command 'Refresh Running Browser(s)'
     menu.separator
     menu.menu 'Entities' do |entities|
       entities.command 'Convert Character / Selection to Entities'
