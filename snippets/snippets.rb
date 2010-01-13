@@ -30,35 +30,35 @@ snippet 'delete' do |s|
   s.expansion = '&#x2326;'
 end
 
-snippet 'HTML Ñ 4.01 Strict' do |s|
+snippet 'HTML - 4.01 Strict' do |s|
   s.trigger = 'doctype'
   s.expansion = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 	"http://www.w3.org/TR/html4/strict.dtd">
 '
 end
 
-snippet 'XHTML Ñ 1.0 Frameset' do |s|
+snippet 'XHTML - 1.0 Frameset' do |s|
   s.trigger = 'doctype'
   s.expansion = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
 '
 end
 
-snippet 'XHTML Ñ 1.0 Strict' do |s|
+snippet 'XHTML - 1.0 Strict' do |s|
   s.trigger = 'doctype'
   s.expansion = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 '
 end
 
-snippet 'XHTML Ñ 1.0 Transitional' do |s|
+snippet 'XHTML - 1.0 Transitional' do |s|
   s.trigger = 'doctype'
   s.expansion = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 '
 end
 
-snippet 'XHTML Ñ 1.1' do |s|
+snippet 'XHTML - 1.1' do |s|
   s.trigger = 'doctype'
   s.expansion = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -95,7 +95,7 @@ snippet 'escape' do |s|
   s.expansion = '&#x238B;'
 end
 
-snippet 'HTML Ñ 4.01 Transitional' do |s|
+snippet 'HTML - 4.01 Transitional' do |s|
   s.trigger = 'doctype'
   s.expansion = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 	"http://www.w3.org/TR/html4/loose.dtd">

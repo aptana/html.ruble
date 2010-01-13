@@ -29,6 +29,24 @@ END
       entities.command 'Convert Character / Selection to Entities Excl. Tags'
       entities.command 'Decode Entities in Line / Selection'
       entities.separator
+      entities.command 'Non-Breaking Space'
+      entities.command 'right'
+      entities.command 'left'
+      entities.command 'backtab'
+      entities.command 'enter'
+      entities.command 'control'
+      entities.command 'delete'
+      entities.command 'return'
+      entities.command 'tab'
+      entities.command 'backspace'
+      entities.command 'command'
+      entities.command 'down'
+      entities.command 'arrow'
+      entities.command 'up'
+      entities.command 'shift'
+      entities.command 'escape'
+      entities.command 'option'
+      entities.separator
       entities.command 'Insert Entity...'
     end
     menu.menu 'URL Escapes' do |escapes|
@@ -39,6 +57,15 @@ END
     menu.separator
     menu.command 'Insert Open/Close Tag (With Current Word)'
     menu.command 'Insert Close Tag'
+    menu.menu 'Insert DocType' do |doctype|
+      doctype.command 'HTML - 4.01 Strict'
+      doctype.command 'HTML - 4.01 Transitional'
+      doctype.separator
+      doctype.command 'XHTML - 1.0 Frameset'
+      doctype.command 'XHTML - 1.0 Strict'
+      doctype.command 'XHTML - 1.0 Transitional'
+      doctype.command 'XHTML - 1.1'
+    end
     menu.separator
     menu.menu 'Includes' do |includes|
       includes.command 'Add Persistent Include'
