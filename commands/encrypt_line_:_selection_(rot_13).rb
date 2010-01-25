@@ -15,7 +15,7 @@ command 'Encrypt Line / Selection (ROT 13)' do |cmd|
   cmd.input = :selection, :line
   cmd.invoke do |context|
 %{<script type="text/javascript">document.write(
-"#{e_js(rot_13(context.in.read))}".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
+"#{e_js(rot_13(STDIN.read))}".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
 </script>}
   end
 end

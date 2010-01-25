@@ -6,7 +6,7 @@ command 'URL Escape Line / Selection' do |cmd|
   cmd.output = :replace_selection
   cmd.input = :selection, :line
   cmd.invoke do |context|
-    context.in.read.gsub(/([^a-zA-Z0-9_.-]+)/n) {
+    STDIN.read.gsub(/([^a-zA-Z0-9_.-]+)/n) {
       '%' + $1.unpack('H2' * $1.size).join('%').upcase
     }
   end

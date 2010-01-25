@@ -5,5 +5,5 @@ command 'URL Unescape Line / Selection' do |cmd|
   cmd.scope = 'text.html'
   cmd.output = :replace_selection
   cmd.input = :selection, :line
-  cmd.invoke {|context| require 'cgi'; CGI.unescape(context.in.read) }
+  cmd.invoke {|context| require 'cgi'; CGI.unescape(STDIN.read) }
 end

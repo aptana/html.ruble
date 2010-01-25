@@ -6,7 +6,7 @@ command 'Forward Delete All Whitespace' do |cmd|
   cmd.output = :replace_selection
   cmd.input = :document
   cmd.invoke do |context|
-    doc = context.in.read
+    doc = STDIN.read
     caret_offset = context.editor.caret_offset
     before = doc[0...caret_offset]
     rest = doc[caret_offset..-1]

@@ -8,7 +8,7 @@ command 'Validate Syntax (W3C)' do |cmd|
   cmd.input = :document
   cmd.invoke do |context|
     $KCODE = 'U'
-    page = context.in.read
+    page = STDIN.read
     page.gsub!(/<\?(php|=).*?\?>|<%.*?%>/m, '')
 
     # try direct input path

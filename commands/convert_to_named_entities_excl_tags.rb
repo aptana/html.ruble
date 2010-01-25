@@ -9,7 +9,7 @@ command 'Convert Character / Selection to Entities Excl. Tags' do |cmd|
   cmd.invoke do |context|
     $KCODE = 'U'
     str = ''
-    context.in.read.scan(/(?x)
+    STDIN.read.scan(/(?x)
     
         ( <\?(?:[^?]*|\?(?!>))*\?>
         | <!-- (?m:.*?) -->

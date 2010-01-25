@@ -14,7 +14,7 @@ command 'Decode Entities in Line / Selection' do |cmd|
       entity_to_char[value] = [key.to_i].pack('U')
     end
     
-    context.in.read.gsub(/&(?:([a-z0-9]+)|#([0-9]+)|#x([0-9A-F]+));/i) do |m|
+    STDIN.read.gsub(/&(?:([a-z0-9]+)|#([0-9]+)|#x([0-9A-F]+));/i) do |m|
       if $1 then
         entity_to_char[$1] || m
       else

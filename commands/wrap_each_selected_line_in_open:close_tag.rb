@@ -6,7 +6,7 @@ command 'Wrap Each Selected Line in Open/Close Tag' do |cmd|
   cmd.output = :insert_as_snippet
   cmd.input = :selection, :line
   cmd.invoke do |context|
-    input = context.in.read
+    input = STDIN.read
     input.gsub(/[\$`\\]/, '\\1').gsub(/([ \t]*)(.+)/, '\1<${1:li}>\2</${1:li}>')
   end
 end

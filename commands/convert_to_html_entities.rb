@@ -8,6 +8,6 @@ command 'Convert Character / Selection to Entities' do |cmd|
   cmd.input = :selection, :character
   cmd.invoke do |context|
     $KCODE = 'U'
-    encode(context.in.read)
+    encode(STDIN.read)
   end
 end

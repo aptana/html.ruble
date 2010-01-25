@@ -10,7 +10,7 @@ command 'Tidy' do |cmd|
 #  cmd.input = :selection, :document
 #  cmd.invoke do |context|
 #    $KCODE = 'U'
-#    page = context.in.read
+#    page = STDIN.read
 #    page.gsub!(/<\?(php|=).*?\?>|<%.*?%>/m, '')
 #
 #    # try direct input path
@@ -37,7 +37,7 @@ command 'Tidy' do |cmd|
         --wrap-php no \
               --tidy-mark no"
     result = IO.popen(cmd_line, "r+") do |io|
-      io.write context.in.read
+      io.write STDIN.read
       io.close_write # let the process know you've given it all the data 
       io.read
     end

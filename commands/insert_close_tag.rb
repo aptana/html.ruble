@@ -6,7 +6,7 @@ command 'Insert Close Tag' do |cmd|
   cmd.output = :insert_as_text
   cmd.input = :document
   cmd.invoke do |context|
-    doc        = context.in.read
+    doc        = STDIN.read
     line       = ENV['TM_LINE_NUMBER'].to_i
     line_index = ENV['TM_LINE_INDEX'].to_i
     

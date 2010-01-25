@@ -20,7 +20,7 @@ command 'Insert Open/Close Tag (With Current Word)' do |cmd|
     
     # handle the case where caret is in the middle of a word, assume only the left part is the tag
     index = ENV['TM_LINE_INDEX'].to_i - ENV['TM_INPUT_START_LINE_INDEX'].to_i
-    tag, suffix = context.in.read, ''
+    tag, suffix = STDIN.read, ''
     if index < tag.length && !ENV['TM_SELECTED_TEXT']
       tag, suffix = tag[0...index], tag[index..-1]
     end
