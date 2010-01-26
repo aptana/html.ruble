@@ -10,7 +10,7 @@ bundle 'HTML' do |bundle|
 Portions (c) Copyright 2006, distributed under the terms of the MIT License.
 END
   bundle.description = 'Support for HTML, converted from TextMate to RadRails by Aptana.'
-  bundle.repository = "git@github.com:aptana/html-rrbundle.git"
+  bundle.repository = "git@github.com:aptana/html-ruble.git"
 
   # most commands install into a dedicated rails menu
   # See also the alternative, HAML-style syntax in menu.rrmenu
