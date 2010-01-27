@@ -1,11 +1,11 @@
 # tminclude.rb
 #
-# An implementation of "Persistent Includes" for RadRails
+# An implementation of "Persistent Includes" for Ruble
 # Brad Choate <brad@bradchoate.com> 
-require "radrails/ui"
+require "Ruble/ui"
 require 'singleton'
 
-module RadRails
+module Ruble
   class Includes
     include Singleton
 
@@ -75,7 +75,7 @@ module RadRails
       @global_vars['shortdate'] = @time.strftime("%m/%d/%y").gsub(/0(\d\/)/, '\1')
       @global_vars['abbrevdate'] = @time.strftime("%a, %b %e, %Y").sub(/  /, ' ')
       @global_vars['yearnum'] = @time.year
-      @global_vars['generator'] = "RadRails"
+      @global_vars['generator'] = "Ruble"
 
       if filename = ENV['TM_FILENAME']
         @global_vars['filename'] = filename
@@ -309,7 +309,7 @@ module RadRails
       cstart = (@escape_open).rstrip + ' '
       cend = (' ' + @escape_close).rstrip
       begin
-        file = RadRails::UI.request_file
+        file = Ruble::UI.request_file
 "#{cstart}#rrinclude \"#{file}\"#{cend}
 #{cstart}end rrinclude#{cend}
 "

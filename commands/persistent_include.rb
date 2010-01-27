@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 require 'tminclude'
 
 command 'Add Persistent Include' do |cmd|
@@ -6,5 +6,5 @@ command 'Add Persistent Include' do |cmd|
   cmd.scope = 'text.html'
   cmd.output = :insert_as_text
   cmd.input = :none
-  cmd.invoke { RadRails::Includes.instance.include_command }
+  cmd.invoke { Ruble::Includes.instance.include_command }
 end

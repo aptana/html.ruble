@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 
 command 'Help: Persistent Includes' do |cmd|
   cmd.scope = 'text.html'

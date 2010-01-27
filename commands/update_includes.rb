@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 require 'tminclude'
 
 command 'Update Document' do |cmd|
@@ -6,5 +6,5 @@ command 'Update Document' do |cmd|
   cmd.scope = 'text.html'
   cmd.output = :replace_document
   cmd.input = :document
-  cmd.invoke {|context| RadRails::Includes.instance.process_persistent_includes(context.in) }
+  cmd.invoke {|context| Ruble::Includes.instance.process_persistent_includes(context.in) }
 end

@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 require 'httpclient'
 
 command 'Validate Syntax (W3C)' do |cmd|

@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 
 command 'Insert Close Tag' do |cmd|
   # FIXME Keybinding seems correct, but doesn't actually work when used

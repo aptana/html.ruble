@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 
 command 'Insert Open/Close Tag (With Current Word)' do |cmd|
   cmd.key_binding = 'CONTROL+M2+<'

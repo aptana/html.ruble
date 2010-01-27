@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 
 # its ruby, so this just addscommands/snippets in bundle (or replaces those with same name)
 # many ruby files could add to a single bundle
@@ -9,8 +9,8 @@ bundle 'HTML' do |bundle|
 
 Portions (c) Copyright 2006, distributed under the terms of the MIT License.
 END
-  bundle.description = 'Support for HTML, converted from TextMate to RadRails by Aptana.'
-  bundle.repository = "git@github.com:aptana/html-rrbundle.git"
+  bundle.description = 'Support for HTML, converted from TextMate to Ruble by Aptana.'
+  bundle.repository = "git@github.com:aptana/html-ruble.git"
 
   # most commands install into a dedicated rails menu
   # See also the alternative, HAML-style syntax in menu.rrmenu

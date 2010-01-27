@@ -1,4 +1,4 @@
-require 'radrails/ui'
+require 'ruble/ui'
 
 # The mapping below was generated using:
 # ruby -e 'STDOUT << "HTML_TAGS = {\n" << `curl -s http://www.w3.org/TR/html4/index/elements.html`.scan(%r{<td title="Name"><a href="(.*?)">\n?(.*?)</a></td>}).map { |e| "  \"#{e[1]}\"".ljust(14) + " => \"#{e[0]}\"" }.join(",\n") << "\n}\n"'
@@ -100,7 +100,7 @@ def request_tag_name(default_tag = "body")
   # FIXME This ui call doesn't actually take the button labels we try to set here
   options = { :title => 'Documentation for Tag', :prompt => 'What tag would you like to lookup?',
     :default => default_tag, :button1 => 'Lookup', :button2 => 'Cancel', :button3 => 'Show All Tags' }
-  tag = RadRails::UI.request_string(options)
+  tag = Ruble::UI.request_string(options)
   if !tag.nil?
     HTML_TAGS[tag.to_s.upcase] || "elements.html"
   else

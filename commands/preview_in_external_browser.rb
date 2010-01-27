@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 require 'rbconfig'
 
 command 'Open Document in Default Browser' do |cmd|

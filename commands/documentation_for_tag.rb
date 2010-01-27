@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 require 'html_tags'
     
 # Lookup current word as a tag name on w3c.org

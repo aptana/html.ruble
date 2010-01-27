@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 
 command 'Wrap Each Selected Line in Open/Close Tag' do |cmd|
   cmd.key_binding = 'CONTROL+SHIFT+COMMAND+W' # FIXME This is mac specific

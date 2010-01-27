@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 
 command 'Strip HTML Tags from Document / Selection' do |cmd|
   cmd.scope = 'text.html'

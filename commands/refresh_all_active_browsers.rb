@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 
 # FIXME This is Mac specific and doesn't seem to encompass the same set of browsers as the Preview command 
 # (which can handle WebKit, this ends up thinking it's Safari and will launch Safari in a new window when WebKit is open!)

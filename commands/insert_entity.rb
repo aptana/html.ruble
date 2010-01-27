@@ -1,5 +1,5 @@
-require 'radrails'
-require 'radrails/ui'
+require 'ruble'
+require 'ruble/ui'
 
 command 'Insert Entity...' do |cmd|
   cmd.key_binding = 'M1+M2+7'
@@ -13,7 +13,7 @@ command 'Insert Entity...' do |cmd|
       entities << { 'display' => "#{value} (#{char})", 'char' => char, 'entity' => value }
     end
     
-    result = RadRails::UI.menu(entities)
+    result = Ruble::UI.menu(entities)
     "&#{result['entity']};"
   end
 end

@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 
 command 'URL Escape Line / Selection' do |cmd|
   cmd.key_binding = 'M1+M2+7'

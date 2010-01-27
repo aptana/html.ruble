@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 
 command 'Open Document in Internal Browser' do |cmd|
   cmd.scope = 'text.html'

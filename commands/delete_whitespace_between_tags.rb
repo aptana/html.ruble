@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 
 command 'Forward Delete All Whitespace' do |cmd|
   cmd.key_binding = 'Control+Option+Delete'

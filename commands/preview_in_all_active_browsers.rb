@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 require "escape"
 
 # FIXME This is Mac specific!

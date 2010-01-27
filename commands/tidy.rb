@@ -1,5 +1,5 @@
-require 'radrails'
-require 'radrails/ui'
+require 'ruble'
+require 'ruble/ui'
 #require 'httpclient'
 
 command 'Tidy' do |cmd|
@@ -48,7 +48,7 @@ command 'Tidy' do |cmd|
     if status == 2 # Errors
     
       msg = "Errors: " + File.read('/tmp/tm_tidy_errors')
-      RadRails.exit_show_tool_tip msg # FIXME Have to do this our own way!
+      Ruble.exit_show_tool_tip msg # FIXME Have to do this our own way!
     
     elsif status == 1 # Warnings - use output but also display notification with warnings
       
@@ -62,7 +62,7 @@ command 'Tidy' do |cmd|
           :summary => "Warnings for tidying your document (press escape to close):",
           :log     => log
         }
-        RadRails::UI.simple_notification(options)
+        Ruble::UI.simple_notification(options)
       end
     
     end

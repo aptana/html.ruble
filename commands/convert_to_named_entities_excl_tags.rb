@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 require 'encode'
     
 command 'Convert Character / Selection to Entities Excl. Tags' do |cmd|

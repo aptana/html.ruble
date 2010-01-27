@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 
 def e_js(str)
   str.gsub(/(?=[\\"])/, '\\').gsub(/\n/, '\n').gsub(/[@.\/]/) { |ch| sprintf('\\%03o', ch[0]) }
