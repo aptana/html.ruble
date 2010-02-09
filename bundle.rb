@@ -10,7 +10,7 @@ bundle 'HTML' do |bundle|
 Portions (c) Copyright 2006, distributed under the terms of the MIT License.
 END
   bundle.description = 'Support for HTML, converted from TextMate to Ruble by Aptana.'
-  bundle.repository = "git@github.com:aptana/html-ruble.git"
+  bundle.repository = "git@github.com:aptana/html.ruble.git"
   start_folding = /(?x)
     (<(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|li|form|dl)\b.*?>
     |<!--(?!.*--\s*>)
