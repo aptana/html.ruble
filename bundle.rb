@@ -11,7 +11,24 @@ Portions (c) Copyright 2006, distributed under the terms of the MIT License.
 END
   bundle.description = 'Support for HTML, converted from TextMate to Ruble by Aptana.'
   bundle.repository = "git@github.com:aptana/html-ruble.git"
-
+  start_folding = /(?x)
+    (<(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|li|form|dl)\b.*?>
+    |<!--(?!.*--\s*>)
+    |^<!--\ \#tminclude\ (?>.*?-->)$
+    |<\?(?:php)?.*\b(if|for(each)?|while)\b.+:
+    |\{\{?(if|foreach|capture|literal|foreach|php|section|strip)
+    |\{\s*($|\?>\s*$|\/\/|\/\*(.*\*\/\s*$|(?!.*?\*\/)))
+    )/
+  end_folding = /(?x)
+    (<\/(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|li|form|dl)>
+    |^(?!.*?<!--).*?--\s*>
+    |^<!--\ end\ tminclude\ -->$
+    |<\?(?:php)?.*\bend(if|for(each)?|while)\b
+    |\{\{?\/(if|foreach|capture|literal|foreach|php|section|strip)
+    |^[^{]*\}
+    )/
+  bundle.set_folding_markers('text.html', start_folding, end_folding)
+  
   # most commands install into a dedicated rails menu
   # See also the alternative, HAML-style syntax in menu.rrmenu
   bundle.menu "HTML" do |menu|
