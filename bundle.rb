@@ -27,7 +27,7 @@ END
     |\{\{?\/(if|foreach|capture|literal|foreach|php|section|strip)
     |^[^{]*\}
     )/
-  bundle.set_folding_markers('text.html', start_folding, end_folding)
+  bundle.folding['text.html'] = start_folding, end_folding
   
   # most commands install into a dedicated rails menu
   # See also the alternative, HAML-style syntax in menu.rrmenu
