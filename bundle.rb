@@ -1,7 +1,5 @@
 require 'ruble'
 
-# its ruby, so this just addscommands/snippets in bundle (or replaces those with same name)
-# many ruby files could add to a single bundle
 bundle 'HTML' do |bundle|
   bundle.author = "Christopher Williams, ? et al"
   bundle.copyright = <<END
@@ -10,9 +8,11 @@ bundle 'HTML' do |bundle|
 Portions (c) Copyright 2006, distributed under the terms of the MIT License.
 END
   bundle.description = 'Support for HTML, converted from TextMate to Ruble by Aptana.'
-  bundle.repository = "git@github.com:aptana/html.ruble.git"
+  bundle.repository = "git://github.com/aptana/html.ruble.git"
+  # Folding
+  BLOCK_TAGS = 'body|div|dl|fieldset|form|frame|head|html|li|menu|ol|script|select|style|table|tbody|thead|tfoot|tr|ul'
   start_folding = /(?x)
-    (<(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|li|form|dl)\b.*?>
+    (<(?i:#{BLOCK_TAGS})\b.*?>
     |<!--(?!.*--\s*>)
     |^<!--\ \#tminclude\ (?>.*?-->)$
     |<\?(?:php)?.*\b(if|for(each)?|while)\b.+:
@@ -20,7 +20,7 @@ END
     |\{\s*($|\?>\s*$|\/\/|\/\*(.*\*\/\s*$|(?!.*?\*\/)))
     )/
   end_folding = /(?x)
-    (<\/(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|li|form|dl)>
+    (<\/(?i:#{BLOCK_TAGS})>
     |^(?!.*?<!--).*?--\s*>
     |^<!--\ end\ tminclude\ -->$
     |<\?(?:php)?.*\bend(if|for(each)?|while)\b
@@ -28,6 +28,22 @@ END
     |^[^{]*\}
     )/
   bundle.folding['text.html'] = start_folding, end_folding
+  # Indentation
+  increase_indent_pattern = /(?x)
+    <(?!\?|area|base|br|col|frame|hr|html|img|input|link|meta|param|[^>]*\/>)
+      ([A-Za-z0-9]+)(?=\s|>)\b[^>]*>(?!.*<\/\1>)
+    |<!--(?!.*-->)
+    |<\?php.+?\b(if|else(?:if)?|for(?:each)?|while)\b.*:(?!.*end\1)
+    |\{[^}"']*$/
+  decrease_indent_pattern = /(?x)
+    ^\s*
+    (<\/(?!html)
+      [A-Za-z0-9]+\b[^>]*>
+    |-->
+    |<\?(php)?\s+(else(if)?|end(if|for(each)?|while))
+    |\}
+    )/
+  bundle.indent['text.html'] = increase_indent_pattern, decrease_indent_pattern
   
   # most commands install into a dedicated rails menu
   # See also the alternative, HAML-style syntax in menu.rrmenu
