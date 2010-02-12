@@ -5,8 +5,9 @@ bundle 'HTML' do |bundle|
   bundle.copyright = "© Copyright 2010 Aptana Inc. Distributed under the MIT license."
   bundle.description = 'Support for HTML, converted from TextMate.'
   bundle.repository = "git://github.com/aptana/html.ruble.git"
+
   # Folding
-  BLOCK_TAGS = 'body|div|dl|fieldset|form|frame|head|html|li|menu|ol|script|select|style|table|tbody|thead|tfoot|tr|ul'
+  BLOCK_TAGS = 'body|div|dd|dl|embed|fieldset|form|frame|head|html|menu|object|ol|script|select|style|table|tbody|thead|tfoot|tr|ul'
   start_folding = /(?x)
     (<(?i:#{BLOCK_TAGS})\b.*?>
     |<!--(?!.*--\s*>)
@@ -24,6 +25,7 @@ bundle 'HTML' do |bundle|
     |^[^{]*\}
     )/
   bundle.folding['text.html'] = start_folding, end_folding
+
   # Indentation
   increase_indent_pattern = /(?x)
     <(?!\?|area|base|br|col|frame|hr|html|img|input|link|meta|param|[^>]*\/>)
