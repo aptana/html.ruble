@@ -1,13 +1,9 @@
 require 'ruble'
 
 bundle 'HTML' do |bundle|
-  bundle.author = "Christopher Williams, ? et al"
-  bundle.copyright = <<END
-(c) Copyright 2010 Aptana Inc. Distributed under GPLv3 and Aptana Source license.
-
-Portions (c) Copyright 2006, distributed under the terms of the MIT License.
-END
-  bundle.description = 'Support for HTML, converted from TextMate to Ruble by Aptana.'
+  bundle.author = 'Christopher Williams'
+  bundle.copyright = "© Copyright 2010 Aptana Inc. Distributed under the MIT license."
+  bundle.description = 'Support for HTML, converted from TextMate.'
   bundle.repository = "git://github.com/aptana/html.ruble.git"
   # Folding
   BLOCK_TAGS = 'body|div|dl|fieldset|form|frame|head|html|li|menu|ol|script|select|style|table|tbody|thead|tfoot|tr|ul'
