@@ -2,7 +2,7 @@
 #
 # An implementation of "Persistent Includes" for Ruble
 # Brad Choate <brad@bradchoate.com> 
-require "Ruble/ui"
+require "ruble/ui"
 require 'singleton'
 
 module Ruble
