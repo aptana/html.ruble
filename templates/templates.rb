@@ -15,9 +15,9 @@ HTML_TEMPLATES.each do |filename, name|
     template(name + " Template (#{filetype})") do |t|
       t.filetype = filetype
       t.invoke do |context|
-        # FIXME User ERB or gsuub to populate the env variables in file...
-        #TM_DATE=`date +%Y-%m-%d`
-        IO.read("#{ENV['TM_BUNDLE_SUPPORT']}/../templates/#{filename}")
+        ENV['TM_DATE'] = Time.now.strftime("%Y-%m-%d")
+        raw_contents = IO.read("#{ENV['TM_BUNDLE_SUPPORT']}/../templates/#{filename}")
+        raw_contents.gsub(/\$\{([^}]*)\}/) {|match| ENV[match[2..-2]] }
      end
     end  
   end
