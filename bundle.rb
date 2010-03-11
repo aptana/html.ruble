@@ -28,7 +28,7 @@ bundle 'HTML' do |bundle|
 
   # Indentation
   increase_indent_pattern = /(?x)
-    <(?!\?|area|base|br|col|frame|hr|html|img|input|link|meta|param|[^>]*\/>)
+    <(?!\?|area|base|br|col|hr|img|input|link|meta|param|[^>]*\/>)
       ([A-Za-z0-9]+)(?=\s|>)\b[^>]*>(?!.*<\/\1>)
     |<!--(?!.*-->)
     |<\?php.+?\b(if|else(?:if)?|for(?:each)?|while)\b.*:(?!.*end\1)
