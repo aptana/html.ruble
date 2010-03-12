@@ -5,7 +5,6 @@ require 'ruble'
 command 'Refresh Running Browser(s)' do |cmd|
   cmd.key_binding = 'M1+M2+r'
   cmd.scope = 'text.html -text.html.ruby, source.css'
-  cmd.scope = 'text.html, source.css'
   cmd.output = :discard
   cmd.input = :none
   cmd.invoke =<<-EOF
