@@ -3,7 +3,7 @@ require 'uri'
 
 command 'Open Document in Default Browser' do |cmd|
   cmd.key_binding = "M1+M2+P"
-  cmd.scope = 'text.html'
+  cmd.scope = 'text.html -text.html.ruby'
   cmd.output = :discard
   cmd.input = :none
   cmd.invoke do |context|
