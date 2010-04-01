@@ -23,19 +23,34 @@ command 'Tidy' do |cmd|
 #  end
   
   # Port using local tidy
-  cmd.output = :replace_selection
-  cmd.input = :selection, :document
+  cmd.output = :replace_document
+  cmd.input = :document
   cmd.invoke do |context|
+    windows = ENV['OS'] && ENV['OS'].downcase.include?("win")
     tab_size = (ENV["TM_TAB_SIZE"] || 2).to_i
-    cmd_line = "\"tidy\" -f /tmp/tm_tidy_errors -iq -utf8 \
+    cmd_line = nil
+    temp = windows ? "#{ENV['TMP']}/tm_tidy_errors" : '/tmp/tm_tidy_errors'
+    # we removed the '--show-body-only yes' option, since it's outputing just the body part, as specified.
+    # usually, the user would like to Tidy the selection or the entire file.
+    if windows
+      cmd_line = "\"\"#{ENV['TM_BUNDLE_SUPPORT']}/tidy\" -f #{temp} -iq -utf8 \
               -wrap 0 --tab-size #{tab_size} --indent-spaces #{tab_size} \
         --indent yes \
               -asxhtml --output-xhtml yes \
-              #{ENV['TM_SELECTED_TEXT'].length == 0 ? '' : '--show-body-only yes'} \
+              --enclose-text yes \
+              --doctype strict \
+        --wrap-php no \
+              --tidy-mark no\""
+    else
+      cmd_line = "\"tidy\" -f /tmp/tm_tidy_errors -iq -utf8 \
+              -wrap 0 --tab-size #{tab_size} --indent-spaces #{tab_size} \
+        --indent yes \
+              -asxhtml --output-xhtml yes \
               --enclose-text yes \
               --doctype strict \
         --wrap-php no \
               --tidy-mark no"
+    end
     result = IO.popen(cmd_line, "r+") do |io|
       io.write STDIN.read
       io.close_write # let the process know you've given it all the data 
@@ -43,16 +58,16 @@ command 'Tidy' do |cmd|
     end
     status = $?.exitstatus
 
-    at_exit { File.unlink('/tmp/tm_tidy_errors') } # Clean up error log
+    at_exit { File.unlink(temp) } # Clean up error log
     
     if status == 2 # Errors
     
-      msg = "Errors: " + File.read('/tmp/tm_tidy_errors')
+      msg = "Errors: " + File.read(temp)
       Ruble.exit_show_tool_tip msg # FIXME Have to do this our own way!
     
     elsif status == 1 # Warnings - use output but also display notification with warnings
       
-      log = File.read('/tmp/tm_tidy_errors').to_a.select do |line|
+      log = File.read(temp).to_a.select do |line|
         ! (ENV['TM_SELECTED_TEXT'] and (line.include?('Warning: missing <!DOCTYPE> declaration') or line.include?("Warning: inserting missing 'title' element")))
       end.join rescue nil
       
