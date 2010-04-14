@@ -1,3 +1,5 @@
+require 'ruble'
+
 with_defaults :scope => 'text.html' do |bundle|
 
 snippet 'arrow' do |s|
