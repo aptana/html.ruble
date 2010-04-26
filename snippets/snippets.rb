@@ -240,7 +240,7 @@ end # End Snippets with scope 'text.html'
 with_defaults :scope => 'text.html', :input => :none, :output => :insert_as_snippet do |bundle|
 
   command 'Emphasize' do |cmd|
-    cmd.key_binding = 'M1+M2+i'
+    cmd.key_binding = 'M1+M2+I'
     cmd.input = :selection
     cmd.invoke do |context|
       selection = ENV['TM_SELECTED_TEXT'] || ''
@@ -329,7 +329,7 @@ with_defaults :scope => 'text.html', :input => :none, :output => :insert_as_snip
   end
   
   command 'Strong' do |cmd|
-    cmd.key_binding = 'M1+M2+b'
+    cmd.key_binding = 'M1+M2+B'
     cmd.input = :selection
     cmd.invoke do |context|
       selection = ENV['TM_SELECTED_TEXT'] || ''

@@ -3,7 +3,7 @@ require 'html_tags'
     
 # Lookup current word as a tag name on w3c.org
 command 'Documentation for Tag' do |cmd|
-  cmd.key_binding = 'CONTROL+M2+h'
+  cmd.key_binding = 'CONTROL+M2+H'
   cmd.scope = 'text.html, text.html entity.name.tag'
   cmd.output = :show_as_html
   cmd.input = :none

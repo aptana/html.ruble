@@ -9,7 +9,7 @@ def rot_13(str)
 end
 
 command 'Encrypt Line / Selection (ROT 13)' do |cmd|
-  cmd.key_binding = 'M1+M2+&'
+  cmd.key_binding = 'M1+M2+7'
   cmd.scope = 'text.html'
   cmd.output = :replace_selection
   cmd.input = :selection, :line
