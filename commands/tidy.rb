@@ -33,6 +33,7 @@ command 'Tidy' do |cmd|
     # we removed the '--show-body-only yes' option, since it's outputing just the body part, as specified.
     # usually, the user would like to Tidy the selection or the entire file.
     if windows
+      # FIXME Check if tidy is installed...
       cmd_line = "\"\"#{ENV['TM_BUNDLE_SUPPORT']}/tidy\" -f #{temp} -iq -utf8 \
               -wrap 0 --tab-size #{tab_size} --indent-spaces #{tab_size} \
         --indent yes \
@@ -42,6 +43,9 @@ command 'Tidy' do |cmd|
         --wrap-php no \
               --tidy-mark no\""
     else
+      # Need to check if tidy is installed before we move on...
+      result = `which tidy`.strip
+      context.exit_show_tool_tip "Tidy is not installed. Please install it first." if result.empty?
       cmd_line = "\"tidy\" -f /tmp/tm_tidy_errors -iq -utf8 \
               -wrap 0 --tab-size #{tab_size} --indent-spaces #{tab_size} \
         --indent yes \
@@ -52,7 +56,7 @@ command 'Tidy' do |cmd|
               --tidy-mark no"
     end
     result = IO.popen(cmd_line, "r+") do |io|
-      io.write STDIN.read
+      io << $stdin.read
       io.close_write # let the process know you've given it all the data 
       io.read
     end
