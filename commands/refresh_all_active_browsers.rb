@@ -4,7 +4,7 @@ require 'ruble'
 # (which can handle WebKit, this ends up thinking it's Safari and will launch Safari in a new window when WebKit is open!)
 command 'Refresh Running Browser(s)' do |cmd|
   cmd.key_binding = 'M1+M2+R'
-  cmd.scope = 'text.html -text.html.ruby, source.css'
+  cmd.scope = 'text.html, source.css'
   cmd.output = :discard
   cmd.input = :none
   cmd.invoke =<<-EOF
