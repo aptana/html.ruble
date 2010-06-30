@@ -6,5 +6,5 @@ command 'Update Document' do |cmd|
   cmd.scope = 'text.html'
   cmd.output = :replace_document
   cmd.input = :document
-  cmd.invoke {|context| Ruble::Includes.instance.process_persistent_includes(context.in) }
+  cmd.invoke { Dir.chdir(File.dirname(ENV['TM_FILEPATH'])); Ruble::Includes.instance.process_persistent_includes($stdin) }
 end

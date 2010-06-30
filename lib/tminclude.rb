@@ -179,13 +179,12 @@ module Ruble
 
       # File resolution; expand ~/... paths;
       # look for relative files, relative to current file, current project, replace variables
-      file = replace_variables(file, local_vars)
-      file = File.expand_path(file)
-      if File.exist?(filepath = file)
+      file = replace_variables(file, local_vars)      
+      if File.exist?(filepath = File.expand_path(file))
       elsif file.match(/^\//) # non-relative path...
         print "Could not open file: #{file}"
         exit 206
-      elsif File.exist?(filepath = "#{ENV['TM_FILEPATH']}/#{file}")
+      elsif File.exist?(filepath = "#{File.dirname(ENV['TM_FILEPATH'])}/#{file}")
       elsif File.exist?(filepath = "#{ENV['TM_PROJECT_DIRECTORY']}/#{file}")
       else
         print "Could not open file: #{file}"
@@ -271,7 +270,7 @@ module Ruble
 
     public
 
-    def process_persistent_includes(input = STDIN)
+    def process_persistent_includes(input = $stdin)
       #initialize
       reset
 
