@@ -1,6 +1,5 @@
 require 'ruble'
 require 'ruble/ui'
-#require 'httpclient'
 
 command 'Tidy' do |cmd|
   cmd.key_binding = 'CONTROL+M2+H'
@@ -9,8 +8,9 @@ command 'Tidy' do |cmd|
 #  cmd.output = :show_as_html
 #  cmd.input = :selection, :document
 #  cmd.invoke do |context|
+#    require 'httpclient'
 #    $KCODE = 'U'
-#    page = STDIN.read
+#    page = $stdin.read
 #    page.gsub!(/<\?(php|=).*?\?>|<%.*?%>/m, '')
 #
 #    # try direct input path

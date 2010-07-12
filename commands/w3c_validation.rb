@@ -1,5 +1,4 @@
 require 'ruble'
-require 'httpclient'
 
 command 'Validate Syntax (W3C)' do |cmd|
   cmd.key_binding = 'CONTROL+M2+V'
@@ -8,9 +7,10 @@ command 'Validate Syntax (W3C)' do |cmd|
   cmd.input = :document
   cmd.invoke do |context|
     $KCODE = 'U'
-    page = STDIN.read
+    page = $stdin.read
     page.gsub!(/<\?(php|=).*?\?>|<%.*?%>/m, '')
 
+    require 'httpclient'
     # try direct input path
     result = HTTPClient.post 'http://validator.w3.org/check', { :fragment => page }
     
