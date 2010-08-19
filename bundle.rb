@@ -7,9 +7,6 @@ bundle do |bundle|
   bundle.description = 'Support for HTML, converted from TextMate.'
   bundle.repository = "git://github.com/aptana/html.ruble.git"
 
-  bundle.project_template :web, "Basic Web Template", "templates/basic_web_template.zip", "A basic template which includes only a default index.html file"
-  bundle.project_template :web, "HTML5 Template", "templates/html5_template.zip", "A full-blown HTML5-ready template"
-
   # Folding
   BLOCK_TAGS = 'body|div|dd|dl|embed|fieldset|form|frame|head|html|menu|object|ol|script|select|style|table|tbody|thead|tfoot|tr|ul'
   start_folding = /(?x)
