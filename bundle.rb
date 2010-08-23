@@ -7,8 +7,18 @@ bundle do |bundle|
   bundle.description = 'Support for HTML, converted from TextMate.'
   bundle.repository = "git://github.com/aptana/html.ruble.git"
 
-  bundle.project_template :web, "Basic Web Template", "templates/basic_web_template.zip", "A basic template which includes only a default index.html file"
-  bundle.project_template :web, "HTML5 Template", "templates/html5_template.zip", "A full-blown HTML5-ready template"
+  bundle.project_template :web,
+                          "Basic Web Template",
+                          "templates/basic_web_template.zip",
+                          "A basic template which includes only a default index.html file"
+  bundle.project_template :web,
+                          "HTML5 Boilerplate",
+                          "http://github.com/paulirish/html5-boilerplate.git",
+                          "Paul Irish's HTML5 Boilerplate (http://html5boilerplate.com/). Requires network access."
+  bundle.project_template :web,
+                          "HTML5 Boilerplate (Cached)",
+                          "templates/html5_template.zip",
+                          "Cached version of Paul Irish's HTML5 Boilerplate project for those without network access, current as of 2010-08-18."
 
   # Folding
   BLOCK_TAGS = 'body|div|dd|dl|embed|fieldset|form|frame|head|html|menu|object|ol|script|select|style|table|tbody|thead|tfoot|tr|ul'
