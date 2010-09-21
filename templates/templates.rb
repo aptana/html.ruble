@@ -27,6 +27,7 @@ template("HTML 5 Template") do |t|
   t.filetype = "*.html"
   t.invoke do |context|
     ENV['TM_DATE'] = Time.now.strftime("%Y-%m-%d")
+    ENV['TM_YEAR'] = Time.now.strftime("%Y")
     raw_contents = IO.read("#{ENV['TM_BUNDLE_SUPPORT']}/../templates/html5.html")
     raw_contents.gsub(/\$\{([^}]*)\}/) {|match| ENV[match[2..-2]] }
   end
