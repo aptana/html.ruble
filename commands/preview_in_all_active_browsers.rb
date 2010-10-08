@@ -1,5 +1,4 @@
 require 'ruble'
-require "escape"
 
 # FIXME This is Mac specific!
 
@@ -16,6 +15,8 @@ command 'Open Document in Running Browser(s)' do |cmd|
   cmd.output = :discard
   cmd.input = :none
   cmd.invoke do |context|
+    require "escape"
+    
     if ENV['TM_PROJECT_SITEURL']
       url = "#{ENV['TM_PROJECT_SITEURL']}" + ENV['TM_FILEPATH'].sub(/^#{Regexp.escape(ENV['TM_PROJECT_DIRECTORY'])}\//, '') 
     else

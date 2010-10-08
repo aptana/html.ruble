@@ -1,5 +1,4 @@
 require 'ruble'
-require 'uri'
 
 command 'Open Document in Default Browser' do |cmd|
   cmd.key_binding = "M1+M2+P"
@@ -10,6 +9,7 @@ command 'Open Document in Default Browser' do |cmd|
     if ENV['TM_PROJECT_SITEURL']
       url = "#{ENV['TM_PROJECT_SITEURL']}" + ENV['TM_FILEPATH'].sub(/^#{Regexp.escape(ENV['TM_PROJECT_DIRECTORY'])}\//, '') 
     else
+      require 'uri'
       url = "file:#{URI.escape(ENV['TM_FILEPATH'])}"
     end    
     context.browser.open(url, :browser => :default)

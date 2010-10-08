@@ -1,5 +1,4 @@
 require 'ruble'
-require 'encode'
 
 command 'Convert Character / Selection to Entities' do |cmd|
   cmd.key_binding = 'M1+M2+7'
@@ -8,6 +7,7 @@ command 'Convert Character / Selection to Entities' do |cmd|
   cmd.input = :selection, :character
   cmd.invoke do |context|
     $KCODE = 'U'
+    require 'encode'
     encode(STDIN.read)
   end
 end
