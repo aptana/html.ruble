@@ -147,7 +147,12 @@ end
 env "text.html" do |e|
   e['TM_COMMENT_START'] = "<!-- "
   e['TM_COMMENT_END'] = " -->"
+  e['TM_HTML_EMPTY_TAGS'] = 'area|base|basefont|br|col|frame|hr|img|input|isindex|link|meta|param'
   e.delete('TM_COMMENT_START_2')
   e.delete('TM_COMMENT_END_2')
   e.delete('TM_COMMENT_DISABLE_INDENT')
 end
+
+# Smart character pairs
+smart_typing_pairs["text.html"] = ['"', '"', '(', ')', '{', '}', '[', ']', 'Ò', 'Ó', '<', '>']
+smart_typing_pairs["meta.tag"] = ['"', '"', '(', ')', '{', '}', '[', ']', 'Ò', 'Ó', '<', '>', "'", "'"]
