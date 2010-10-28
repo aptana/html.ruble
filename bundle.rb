@@ -13,7 +13,7 @@ bundle do |bundle|
                           "A basic template which includes only a default index.html file"
   bundle.project_template :web,
                           "HTML5 Boilerplate",
-                          "http://github.com/paulirish/html5-boilerplate.git",
+                          "git://github.com/paulirish/html5-boilerplate.git",
                           "Paul Irish's HTML5 Boilerplate (http://html5boilerplate.com/). Requires network access."
   bundle.project_template :web,
                           "HTML5 Boilerplate (Cached)",
