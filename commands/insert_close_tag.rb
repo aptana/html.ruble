@@ -4,9 +4,9 @@ command 'Insert Close Tag' do |cmd|
   # FIXME Keybinding seems correct, but doesn't actually work when used
   cmd.key_binding = 'M1+OPTION+.'
   cmd.output = :insert_as_text
-  cmd.input = :document
+  cmd.input = :none
   cmd.invoke do |context|
-    doc        = STDIN.read
+    doc        = context.editor.document.get
     line       = ENV['TM_LINE_NUMBER'].to_i
     line_index = ENV['TM_LINE_INDEX'].to_i
     
