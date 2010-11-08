@@ -18,7 +18,7 @@ command 'Insert Close Tag' do |cmd|
     
     before.gsub!(/<[^>]+\/\s*>/i, '')
     
-    # remove all self-closing tags
+    # remove all self-closing tags 
     if ENV.has_key?('TM_HTML_EMPTY_TAGS')
       empty_tags = ENV['TM_HTML_EMPTY_TAGS']
       before.gsub!(/<(#{empty_tags})\b[^>]*>/i, '')
