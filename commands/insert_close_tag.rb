@@ -1,8 +1,7 @@
 require 'ruble'
 
 command 'Insert Close Tag' do |cmd|
-  # FIXME Keybinding seems correct, but doesn't actually work when used
-  cmd.key_binding = 'M1+OPTION+.'
+  cmd.key_binding = 'M1+M3+.'
   cmd.output = :insert_as_text
   cmd.input = :none
   cmd.invoke do |context|
