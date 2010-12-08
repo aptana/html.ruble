@@ -366,7 +366,7 @@ with_defaults :scope => 'text.html', :input => :none, :output => :insert_as_snip
     cmd.invoke do |context|
       selection = ENV['TM_SELECTED_TEXT'] || ''
       if selection.length > 0
-        "<${1:p}>${2:#{selection}}</${1:p}>"
+        "<${1:p}>${2:#{selection.gsub('/', '\/')}}</${1:p}>"
       else
         "<${1:p}>$0</${1:p}>"
       end
