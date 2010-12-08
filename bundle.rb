@@ -134,6 +134,8 @@ bundle do |bundle|
       comments.command 'IE Conditional Comment: NOT Internet Explorer'
     end
     menu.separator
+    menu.command 'Select Tag Pair and Content'
+    menu.separator
     menu.command 'Wrap Selection in Open/Close Tag'
     menu.command 'Wrap Each Selected Line in Open/Close Tag'
     menu.command 'Wrap in <?= ... ?>'
