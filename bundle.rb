@@ -156,5 +156,5 @@ env "text.html" do |e|
 end
 
 # Smart character pairs
-smart_typing_pairs["text.html"] = ['"', '"', '(', ')', '{', '}', '[', ']', 'Ò', 'Ó', '<', '>']
-smart_typing_pairs["meta.tag"] = ['"', '"', '(', ')', '{', '}', '[', ']', 'Ò', 'Ó', '<', '>', "'", "'"]
+smart_typing_pairs["text.html"] = ['"', '"', '(', ')', '{', '}', '[', ']', '<', '>']
+smart_typing_pairs["meta.tag"] = ['"', '"', '(', ')', '{', '}', '[', ']', '<', '>', "'", "'"]
