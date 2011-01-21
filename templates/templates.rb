@@ -8,6 +8,7 @@ HTML_TEMPLATES = {
   'frameset_1_0.xhtml' => 'XHTML - 1.0 Frameset',
   '1_1.xhtml' => 'XHTML - 1.1'
 }
+
 HTML_TEMPLATES.each do |filename, name|
   filetypes = ["*.html"]
   filetypes <<  "*.xhtml" if filename.end_with? ".xhtml"
@@ -29,6 +30,33 @@ template("HTML 5 Template") do |t|
     ENV['TM_DATE'] = Time.now.strftime("%Y-%m-%d")
     ENV['TM_YEAR'] = Time.now.strftime("%Y")
     raw_contents = IO.read("#{ENV['TM_BUNDLE_SUPPORT']}/../templates/html5.html")
+    raw_contents.gsub(/\$\{([^}]*)\}/) {|match| ENV[match[2..-2]] }
+  end
+end
+
+template("IDL Template") do |t|
+  t.filetype = "*.html"
+  t.invoke do |context|
+    ENV['TM_DATE'] = Time.now.strftime("%Y-%m-%d")
+    raw_contents = IO.read("#{ENV['TM_BUNDLE_SUPPORT']}/../templates/template.idl")
+    raw_contents.gsub(/\$\{([^}]*)\}/) {|match| ENV[match[2..-2]] }
+  end
+end
+
+template("DTD Template") do |t|
+  t.filetype = "*.html"
+  t.invoke do |context|
+    ENV['TM_DATE'] = Time.now.strftime("%Y-%m-%d")
+    raw_contents = IO.read("#{ENV['TM_BUNDLE_SUPPORT']}/../templates/template.dtd")
+    raw_contents.gsub(/\$\{([^}]*)\}/) {|match| ENV[match[2..-2]] }
+  end
+end
+
+template("SVG Template") do |t|
+  t.filetype = "*.html"
+  t.invoke do |context|
+    ENV['TM_DATE'] = Time.now.strftime("%Y-%m-%d")
+    raw_contents = IO.read("#{ENV['TM_BUNDLE_SUPPORT']}/../templates/template.svg")
     raw_contents.gsub(/\$\{([^}]*)\}/) {|match| ENV[match[2..-2]] }
   end
 end
