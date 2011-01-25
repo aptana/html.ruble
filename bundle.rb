@@ -121,6 +121,8 @@ bundle do |bundle|
       comments.command 'IE Conditional Comment: NOT Internet Explorer'
     end
     menu.separator
+    menu.command 'Select Tag Pair and Content'
+    menu.separator
     menu.command 'Wrap Selection in Open/Close Tag'
     menu.command 'Wrap Each Selected Line in Open/Close Tag'
     menu.command 'Wrap in <?= ... ?>'
@@ -141,5 +143,5 @@ env "text.html" do |e|
 end
 
 # Smart character pairs
-smart_typing_pairs["text.html"] = ['"', '"', '(', ')', '{', '}', '[', ']', 'Ò', 'Ó', '<', '>']
-smart_typing_pairs["meta.tag"] = ['"', '"', '(', ')', '{', '}', '[', ']', 'Ò', 'Ó', '<', '>', "'", "'"]
+smart_typing_pairs["text.html"] = ['"', '"', '(', ')', '{', '}', '[', ']', '<', '>']
+smart_typing_pairs["meta.tag"] = ['"', '"', '(', ')', '{', '}', '[', ']', '<', '>', "'", "'"]

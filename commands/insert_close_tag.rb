@@ -1,7 +1,6 @@
 require 'ruble'
 
 command 'Insert Close Tag' do |cmd|
-  cmd.key_binding = 'M1+M3+.'
   cmd.output = :insert_as_text
   cmd.input = :none
   cmd.invoke do |context|
