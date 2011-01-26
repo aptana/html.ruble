@@ -1,0 +1,1630 @@
+!!com.aptana.scripting.model.BundleElement
+author: Christopher Williams
+children:
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children: &id001 []
+    commandName: Documentation for Tag
+    customProperties: null
+    displayName: Documentation for Tag
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Validate Syntax (W3C)
+    customProperties: null
+    displayName: Validate Syntax (W3C)
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Open Document in Internal Browser
+    customProperties: null
+    displayName: Open Document in Internal Browser
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Open Document in Default Browser
+    customProperties: null
+    displayName: Open Document in Default Browser
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Open Document in Running Browser(s)
+    customProperties: null
+    displayName: Open Document in Running Browser(s)
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Refresh Running Browser(s)
+    customProperties: null
+    displayName: Refresh Running Browser(s)
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Convert Character / Selection to Entities
+      customProperties: null
+      displayName: Convert Character / Selection to Entities
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Convert Character / Selection to Entities Excl. Tags
+      customProperties: null
+      displayName: Convert Character / Selection to Entities Excl. Tags
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Decode Entities in Line / Selection
+      customProperties: null
+      displayName: Decode Entities in Line / Selection
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Non-Breaking Space
+      customProperties: null
+      displayName: Non-Breaking Space
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: right
+      customProperties: null
+      displayName: right
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: left
+      customProperties: null
+      displayName: left
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: backtab
+      customProperties: null
+      displayName: backtab
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: enter
+      customProperties: null
+      displayName: enter
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: control
+      customProperties: null
+      displayName: control
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: delete
+      customProperties: null
+      displayName: delete
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: return
+      customProperties: null
+      displayName: return
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: tab
+      customProperties: null
+      displayName: tab
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: backspace
+      customProperties: null
+      displayName: backspace
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: command
+      customProperties: null
+      displayName: command
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: down
+      customProperties: null
+      displayName: down
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: arrow
+      customProperties: null
+      displayName: arrow
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: up
+      customProperties: null
+      displayName: up
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: shift
+      customProperties: null
+      displayName: shift
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: escape
+      customProperties: null
+      displayName: escape
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: option
+      customProperties: null
+      displayName: option
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Insert Entity...
+      customProperties: null
+      displayName: Insert Entity...
+      path: bundle.rb
+      scope: null
+    commandName: Entities
+    customProperties: null
+    displayName: Entities
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: URL Escape Line / Selection
+      customProperties: null
+      displayName: URL Escape Line / Selection
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: URL Unescape Line / Selection
+      customProperties: null
+      displayName: URL Unescape Line / Selection
+      path: bundle.rb
+      scope: null
+    commandName: URL Escapes
+    customProperties: null
+    displayName: URL Escapes
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Encrypt Line / Selection (ROT 13)
+    customProperties: null
+    displayName: Encrypt Line / Selection (ROT 13)
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Insert Open/Close Tag (With Current Word)
+    customProperties: null
+    displayName: Insert Open/Close Tag (With Current Word)
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Insert Close Tag
+    customProperties: null
+    displayName: Insert Close Tag
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: HTML - 4.01 Strict
+      customProperties: null
+      displayName: HTML - 4.01 Strict
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: HTML - 4.01 Transitional
+      customProperties: null
+      displayName: HTML - 4.01 Transitional
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: XHTML - 1.0 Frameset
+      customProperties: null
+      displayName: XHTML - 1.0 Frameset
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: XHTML - 1.0 Strict
+      customProperties: null
+      displayName: XHTML - 1.0 Strict
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: XHTML - 1.0 Transitional
+      customProperties: null
+      displayName: XHTML - 1.0 Transitional
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: XHTML - 1.1
+      customProperties: null
+      displayName: XHTML - 1.1
+      path: bundle.rb
+      scope: null
+    commandName: Insert DocType
+    customProperties: null
+    displayName: Insert DocType
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Add Persistent Include
+      customProperties: null
+      displayName: Add Persistent Include
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Update Document
+      customProperties: null
+      displayName: Update Document
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: 'Help: Persistent Includes'
+      customProperties: null
+      displayName: 'Help: Persistent Includes'
+      path: bundle.rb
+      scope: null
+    commandName: Includes
+    customProperties: null
+    displayName: Includes
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Strong
+      customProperties: null
+      displayName: Strong
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Emphasize
+      customProperties: null
+      displayName: Emphasize
+      path: bundle.rb
+      scope: null
+    commandName: Format
+    customProperties: null
+    displayName: Format
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: 'IE Conditional Comment: Internet Explorer 5.0 only'
+      customProperties: null
+      displayName: 'IE Conditional Comment: Internet Explorer 5.0 only'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: 'IE Conditional Comment: Internet Explorer 5.5 only'
+      customProperties: null
+      displayName: 'IE Conditional Comment: Internet Explorer 5.5 only'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: 'IE Conditional Comment: Internet Explorer 5.x'
+      customProperties: null
+      displayName: 'IE Conditional Comment: Internet Explorer 5.x'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: 'IE Conditional Comment: Internet Explorer 6 and below'
+      customProperties: null
+      displayName: 'IE Conditional Comment: Internet Explorer 6 and below'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: 'IE Conditional Comment: Internet Explorer 6 only'
+      customProperties: null
+      displayName: 'IE Conditional Comment: Internet Explorer 6 only'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: 'IE Conditional Comment: Internet Explorer 7 and above'
+      customProperties: null
+      displayName: 'IE Conditional Comment: Internet Explorer 7 and above'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: 'IE Conditional Comment: Internet Explorer'
+      customProperties: null
+      displayName: 'IE Conditional Comment: Internet Explorer'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: 'IE Conditional Comment: NOT Internet Explorer'
+      customProperties: null
+      displayName: 'IE Conditional Comment: NOT Internet Explorer'
+      path: bundle.rb
+      scope: null
+    commandName: Conditional Comments
+    customProperties: null
+    displayName: Conditional Comments
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Select Tag Pair and Content
+    customProperties: null
+    displayName: Select Tag Pair and Content
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Wrap Selection in Open/Close Tag
+    customProperties: null
+    displayName: Wrap Selection in Open/Close Tag
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Wrap Each Selected Line in Open/Close Tag
+    customProperties: null
+    displayName: Wrap Each Selected Line in Open/Close Tag
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Wrap in <?= ... ?>
+    customProperties: null
+    displayName: Wrap in <?= ... ?>
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Strip HTML Tags from Document / Selection
+    customProperties: null
+    displayName: Strip HTML Tags from Document / Selection
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Tidy
+    customProperties: null
+    displayName: Tidy
+    path: bundle.rb
+    scope: null
+  commandName: HTML
+  customProperties: null
+  displayName: HTML
+  path: bundle.rb
+  scope: text.html
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: snippet-e6ca3551-ba8c-4e00-90a7-4da287fec6ae,
+  path: bundle.rb, scope: text.html}
+- !!com.aptana.scripting.model.SmartTypingPairsElement
+  customProperties: null
+  displayName: smart_typing_pairs-6c550e44-0fcc-4266-a055-731f08f44463
+  pairs: [&id002 '"', *id002, &id003 (, &id004 ), &id005 '{', &id006 '}', &id007 '[',
+    &id008 ']', &id009 <, &id010 '>']
+  path: bundle.rb
+  scope: text.html
+- !!com.aptana.scripting.model.SmartTypingPairsElement
+  customProperties: null
+  displayName: smart_typing_pairs-9a87433a-4006-4c72-b726-6ec717555b92
+  pairs: [*id002, *id002, *id003, *id004, *id005, *id006, *id007, *id008, *id009,
+    *id010, &id011 '''', *id011]
+  path: bundle.rb
+  scope: meta.tag
+- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
+  displayName: 'Help: Persistent Includes', inputPath: null, keyBindingMap: null,
+  outputPath: null, outputType: show_as_html, path: commands/about_persistent_includes.rb,
+  runType: current_thread, scope: text.html, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Convert Character / Selection to Entities
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
+  outputPath: null
+  outputType: replace_selection
+  path: commands/convert_to_html_entities.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Convert Character / Selection to Entities Excl. Tags
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
+  outputPath: null
+  outputType: replace_selection
+  path: commands/convert_to_named_entities_excl_tags.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Decode Entities in Line / Selection
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
+  outputPath: null
+  outputType: replace_selection
+  path: commands/decode_html_entities.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Forward Delete All Whitespace
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+OPTION+DELETE]
+  outputPath: null
+  outputType: replace_selection
+  path: commands/delete_whitespace_between_tags.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Documentation for Tag
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+H]
+  outputPath: null
+  outputType: show_as_html
+  path: commands/documentation_for_tag.rb
+  runType: current_thread
+  scope: text.html, text.html entity.name.tag
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Encrypt Line / Selection (ROT 13)
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
+  outputPath: null
+  outputType: replace_selection
+  path: commands/encrypt_line_selection_rot_13.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
+  displayName: Insert Close Tag, inputPath: null, keyBindingMap: null, outputPath: null,
+  outputType: insert_as_text, path: commands/insert_close_tag.rb, runType: current_thread,
+  scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Insert Entity...
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
+  outputPath: null
+  outputType: insert_as_text
+  path: commands/insert_entity.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Insert Open/Close Tag (With Current Word)
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': ['CONTROL+M2+,']
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands/insert_tag_pair.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Add Persistent Include
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+COMMAND+I]
+  outputPath: null
+  outputType: insert_as_text
+  path: commands/persistent_include.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
+  displayName: Open Document in Running Browser(s), inputPath: null, keyBindingMap: null,
+  outputPath: null, outputType: discard, path: commands/preview_in_all_active_browsers.rb,
+  runType: current_thread, scope: text.html, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
+  displayName: Open Document in Internal Browser, inputPath: null, keyBindingMap: null,
+  outputPath: null, outputType: show_as_html, path: commands/preview_in_browser.rb,
+  runType: current_thread, scope: text.html, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Open Document in Default Browser
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+P]
+  outputPath: null
+  outputType: discard
+  path: commands/preview_in_external_browser.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Refresh Running Browser(s)
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+R]
+  outputPath: null
+  outputType: discard
+  path: commands/refresh_all_active_browsers.rb
+  runType: current_thread
+  scope: text.html, source.css
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Select Tag Pair and Content
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+.]
+  outputPath: null
+  outputType: discard
+  path: commands/select_tag_pair_and_contents.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
+  displayName: Strip HTML Tags from Document / Selection, inputPath: null, keyBindingMap: null,
+  outputPath: null, outputType: replace_selection, path: commands/strip_html_tags.rb,
+  runType: current_thread, scope: text.html, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Tidy
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+H]
+  outputPath: null
+  outputType: replace_document
+  path: commands/tidy.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Update Document
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+COMMAND+U]
+  outputPath: null
+  outputType: replace_document
+  path: commands/update_includes.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: URL Escape Line / Selection
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
+  outputPath: null
+  outputType: replace_selection
+  path: commands/url_escape.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: URL Unescape Line / Selection
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
+  outputPath: null
+  outputType: replace_selection
+  path: commands/url_unescape.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Validate Syntax (W3C)
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+V]
+  outputPath: null
+  outputType: show_as_html
+  path: commands/w3c_validation.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Wrap Each Selected Line in Open/Close Tag
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+SHIFT+COMMAND+W]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands/wrap_each_selected_line_in_open_close_tag.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Quick BR
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+ENTER]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Quick HTML space
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+SPACE]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [arrow]
+  displayName: arrow
+  expansion: '&#x2192;'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [backspace]
+  displayName: backspace
+  expansion: '&#x232B;'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [backtab]
+  displayName: backtab
+  expansion: '&#x21E4;'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [command]
+  displayName: command
+  expansion: '&#x2318;'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [control]
+  displayName: control
+  expansion: '&#x2303;'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [delete]
+  displayName: delete
+  expansion: '&#x2326;'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [doctype]
+  displayName: HTML - 4.01 Strict
+  expansion: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"\n\t\"http://www.w3.org/TR/html4/strict.dtd\"\
+    >\n"
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [doctype]
+  displayName: XHTML - 1.0 Frameset
+  expansion: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Frameset//EN\"\n\t\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd\"\
+    >\n"
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [doctype]
+  displayName: XHTML - 1.0 Strict
+  expansion: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n\t\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"\
+    >\n"
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [doctype]
+  displayName: XHTML - 1.0 Transitional
+  expansion: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n\t\
+    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n"
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [doctype]
+  displayName: XHTML - 1.1
+  expansion: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\"\n\t\"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\"\
+    >\n"
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [down]
+  displayName: down
+  expansion: '&#x2193;'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [movie]
+  displayName: Embed QT Movie
+  expansion: "<object width=\"${2:320}\" height=\"${3:240}\" classid=\"clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B\"\
+    \ codebase=\"http://www.apple.com/qtactivex/qtplugin.cab\">\n\t<param name=\"\
+    src\" value=\"${1:movie.mov}\"/>\n\t<param name=\"controller\" value=\"${4:true}\"\
+    />\n\t<param name=\"autoplay\" value=\"${5:true}\"/>\n\t<embed src=\"${1:movie.mov}\"\
+    \n\t\twidth=\"${2:320}\" height=\"${3:240}\"\n\t\tcontroller=\"${4:true}\" autoplay=\"\
+    ${5:true}\"\n\t\tscale=\"tofit\" cache=\"true\"\n\t\tpluginspage=\"http://www.apple.com/quicktime/download/\"\
+    \n\t/>\n</object>"
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [enter]
+  displayName: enter
+  expansion: '&#x2305;'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [escape]
+  displayName: escape
+  expansion: '&#x238B;'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [doctype]
+  displayName: HTML - 4.01 Transitional
+  expansion: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\t\
+    \"http://www.w3.org/TR/html4/loose.dtd\">\n"
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [input]
+  displayName: Input with Label
+  expansion: '<label for="$2">$1</label><input type="${3:text/submit/hidden/button}"
+    name="$2" value="$5" id="$2"/>
+
+    '
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [left]
+  displayName: left
+  expansion: '&#x2190;'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [option]
+  displayName: option
+  expansion: '&#x2325;'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [opt]
+  displayName: Option
+  expansion: <option value="${1:option}">${1:option}</option>
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [return]
+  displayName: return
+  expansion: '&#x21A9;'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [right]
+  displayName: right
+  expansion: '&#x2192;'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [select]
+  displayName: Select Box
+  expansion: "<select name=\"${1:some_name}\" id=\"${2:$1}\"${3:${4: multiple}${5:\
+    \ onchange=\"${6:}\"}${7: size=\"${8:1}\"}}>\n\t<option${9: value=\"${10:option1}\"\
+    }>${11:$10}</option>\n\t<option${12: value=\"${13:option2}\"}>${14:$13}</option>${15:}\n\
+    \t$0\n</select>"
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [shift]
+  displayName: shift
+  expansion: '&#x21E7;'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement {async: false, customProperties: null,
+  displayName: 'Special: Return Inside Empty Open/Close Tags', expansion: "\n\t$0\n",
+  inputPath: null, keyBindingMap: null, outputPath: null, outputType: insert_as_snippet,
+  path: snippets/snippets.rb, runType: current_thread, scope: text.html, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [tab]
+  displayName: tab
+  expansion: '&#x21E5;'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [up]
+  displayName: up
+  expansion: '&#x2191;'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [input]
+  displayName: Input
+  expansion: <input type="${1:text/submit/hidden/button}" name="${2:some_name}" value="$3" id="${2:some_name}"/>
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [textarea]
+  displayName: Text Area
+  expansion: <textarea name="${1:Name}" rows="${2:8}" cols="${3:40}">$0</textarea>
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties: null
+  displayName: Non-Breaking Space
+  expansion: '&nbsp;'
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [OPTION+SPACE]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [mailto]
+  displayName: Mail Anchor
+  expansion: <a href="mailto:${1:joe@example.com}?subject=${2:feedback}">${3:email me}</a>
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [base]
+  displayName: Base
+  expansion: <base href="$1" target="$2"/>
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties: null
+  displayName: Br
+  expansion: <br/>
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+ENTER]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [link]
+  displayName: Link
+  expansion: <link rel="${1:stylesheet}" href="${2:/css/master.css}" type="text/css" media="${3:screen}" title="${4:no title}" charset="${5:utf-8}"/>
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [meta]
+  displayName: Meta
+  expansion: <meta name="${1:name}" content="${2:content}"/>
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [scriptsrc]
+  displayName: Script With External Source
+  expansion: <script src="$1" type="text/javascript" charset="${3:utf-8}"></script>
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [script]
+  displayName: Script
+  expansion: "<script type=\"text/javascript\" charset=\"utf-8\">\n\t$0\n</script>"
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [style]
+  displayName: Style
+  expansion: "<style type=\"text/css\" media=\"screen\">\n\t$0\n</style>"
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [table]
+  displayName: Table
+  expansion: "<table border=\"${1:0}\" cellspacing=\"${2:5}\" cellpadding=\"${3:5}\"\
+    >\n\t<tr><th>${4:Header}</th></tr>\n\t<tr><td>${5:Data}</td></tr>\n</table>"
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Emphasize
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+I]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties:
+    prefix_values: [fieldset]
+  displayName: Fieldset
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties:
+    prefix_values: ['!']
+  displayName: 'IE Conditional Comment: Internet Explorer 5.0 only'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties:
+    prefix_values: ['!']
+  displayName: 'IE Conditional Comment: Internet Explorer 5.5 only'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties:
+    prefix_values: ['!']
+  displayName: 'IE Conditional Comment: Internet Explorer 5.x'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties:
+    prefix_values: ['!']
+  displayName: 'IE Conditional Comment: Internet Explorer 6 and below'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties:
+    prefix_values: ['!']
+  displayName: 'IE Conditional Comment: Internet Explorer 6 only'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties:
+    prefix_values: ['!']
+  displayName: 'IE Conditional Comment: Internet Explorer 7 and above'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties:
+    prefix_values: ['!']
+  displayName: 'IE Conditional Comment: Internet Explorer'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties:
+    prefix_values: ['!']
+  displayName: 'IE Conditional Comment: NOT Internet Explorer'
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Strong
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+B]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
+  displayName: 'Wrap in <?= ... ?>', inputPath: null, keyBindingMap: null, outputPath: null,
+  outputType: insert_as_snippet, path: snippets/snippets.rb, runType: current_thread,
+  scope: text.html string, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Wrap Selection in Open/Close Tag
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+SHIFT+W]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties:
+    prefix_values: [body]
+  displayName: Body
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties:
+    prefix_values: [div]
+  displayName: Div
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties:
+    prefix_values: [form]
+  displayName: Form
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties:
+    prefix_values: [h1]
+  displayName: Heading
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties:
+    prefix_values: [head]
+  displayName: Head
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties:
+    prefix_values: [title]
+  displayName: Title
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.ProjectTemplateElement {customProperties: null, description: A basic template which includes only a default index.html file,
+  displayName: Basic Web Template, location: templates/basic_web_template.zip, path: templates/project_templates.rb,
+  scope: null, type: WEB}
+- !!com.aptana.scripting.model.ProjectTemplateElement {customProperties: null, description: 'Paul
+    Irish''s HTML5 Boilerplate (http://html5boilerplate.com/). Requires network access.',
+  displayName: HTML5 Boilerplate, location: 'git://github.com/paulirish/html5-boilerplate.git',
+  path: templates/project_templates.rb, scope: null, type: WEB}
+- !!com.aptana.scripting.model.ProjectTemplateElement {customProperties: null, description: 'Cached
+    version of Paul Irish''s HTML5 Boilerplate project for those without network access,
+    current as of 2010-08-18.', displayName: HTML5 Boilerplate (Cached), location: templates/html5_template.zip,
+  path: templates/project_templates.rb, scope: null, type: WEB}
+- !!com.aptana.scripting.model.TemplateElement {async: false, customProperties: null,
+  displayName: HTML - 4.01 Strict Template (*.html), filetype: '*.html', inputPath: null,
+  keyBindingMap: null, outputPath: null, outputType: discard, path: templates/templates.rb,
+  runType: current_thread, scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.TemplateElement {async: false, customProperties: null,
+  displayName: HTML - 4.01 Transitional Template (*.html), filetype: '*.html', inputPath: null,
+  keyBindingMap: null, outputPath: null, outputType: discard, path: templates/templates.rb,
+  runType: current_thread, scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.TemplateElement {async: false, customProperties: null,
+  displayName: XHTML - 1.0 Strict Template (*.html), filetype: '*.html', inputPath: null,
+  keyBindingMap: null, outputPath: null, outputType: discard, path: templates/templates.rb,
+  runType: current_thread, scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.TemplateElement {async: false, customProperties: null,
+  displayName: XHTML - 1.0 Strict Template (*.xhtml), filetype: '*.xhtml', inputPath: null,
+  keyBindingMap: null, outputPath: null, outputType: discard, path: templates/templates.rb,
+  runType: current_thread, scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.TemplateElement {async: false, customProperties: null,
+  displayName: XHTML - 1.0 Transitional Template (*.html), filetype: '*.html', inputPath: null,
+  keyBindingMap: null, outputPath: null, outputType: discard, path: templates/templates.rb,
+  runType: current_thread, scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.TemplateElement {async: false, customProperties: null,
+  displayName: XHTML - 1.0 Transitional Template (*.xhtml), filetype: '*.xhtml', inputPath: null,
+  keyBindingMap: null, outputPath: null, outputType: discard, path: templates/templates.rb,
+  runType: current_thread, scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.TemplateElement {async: false, customProperties: null,
+  displayName: XHTML - 1.0 Frameset Template (*.html), filetype: '*.html', inputPath: null,
+  keyBindingMap: null, outputPath: null, outputType: discard, path: templates/templates.rb,
+  runType: current_thread, scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.TemplateElement {async: false, customProperties: null,
+  displayName: XHTML - 1.0 Frameset Template (*.xhtml), filetype: '*.xhtml', inputPath: null,
+  keyBindingMap: null, outputPath: null, outputType: discard, path: templates/templates.rb,
+  runType: current_thread, scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.TemplateElement {async: false, customProperties: null,
+  displayName: XHTML - 1.1 Template (*.html), filetype: '*.html', inputPath: null,
+  keyBindingMap: null, outputPath: null, outputType: discard, path: templates/templates.rb,
+  runType: current_thread, scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.TemplateElement {async: false, customProperties: null,
+  displayName: XHTML - 1.1 Template (*.xhtml), filetype: '*.xhtml', inputPath: null,
+  keyBindingMap: null, outputPath: null, outputType: discard, path: templates/templates.rb,
+  runType: current_thread, scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.TemplateElement {async: false, customProperties: null,
+  displayName: HTML 5 Template, filetype: '*.html', inputPath: null, keyBindingMap: null,
+  outputPath: null, outputType: discard, path: templates/templates.rb, runType: current_thread,
+  scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.TemplateElement {async: false, customProperties: null,
+  displayName: IDL Template, filetype: '*.html', inputPath: null, keyBindingMap: null,
+  outputPath: null, outputType: discard, path: templates/templates.rb, runType: current_thread,
+  scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.TemplateElement {async: false, customProperties: null,
+  displayName: DTD Template, filetype: '*.html', inputPath: null, keyBindingMap: null,
+  outputPath: null, outputType: discard, path: templates/templates.rb, runType: current_thread,
+  scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.TemplateElement {async: false, customProperties: null,
+  displayName: SVG Template, filetype: '*.html', inputPath: null, keyBindingMap: null,
+  outputPath: null, outputType: discard, path: templates/templates.rb, runType: current_thread,
+  scope: null, workingDirectoryType: UNDEFINED}
+copyright: © Copyright 2010 Aptana Inc. Distributed under the MIT license.
+customProperties: null
+decreaseIndentMarkers: {!scope 'text.html': !regexp "(?x-mi:\n    ^\\s*\n    (<\\\
+    /(?!html)\n      [A-Za-z0-9]+\\b[^>]*>\n    |-->\n    |<\\?(php)?\\s+(else(if)?|end(if|for(each)?|while))\n\
+    \    |\\}\n    ))"}
+description: Support for HTML, converted from TextMate.
+displayName: HTML
+fileTypeRegistry: {}
+fileTypes: *id001
+foldingStartMarkers: {!scope 'text.html': !regexp "(?x-mi:\n    (<(?i:body|div|dd|dl|embed|fieldset|form|frame|head|html|menu|object|ol|script|select|style|table|tbody|thead|tfoot|tr|ul)\\\
+    b.*?>\n    |<!--(?!.*--\\s*>)\n    |^<!--\\ \\#tminclude\\ (?>.*?-->)$\n    |<\\\
+    ?(?:php)?.*\\b(if|for(each)?|while)\\b.+:\n    |\\{\\{?(if|foreach|capture|literal|foreach|php|section|strip)\n\
+    \    |\\{\\s*($|\\?>\\s*$|\\/\\/|\\/\\*(.*\\*\\/\\s*$|(?!.*?\\*\\/)))\n    ))"}
+foldingStopMarkers: {!scope 'text.html': !regexp "(?x-mi:\n    (<\\/(?i:body|div|dd|dl|embed|fieldset|form|frame|head|html|menu|object|ol|script|select|style|table|tbody|thead|tfoot|tr|ul)>\n\
+    \    |^(?!.*?<!--).*?--\\s*>\n    |^<!--\\ end\\ tminclude\\ -->$\n    |<\\?(?:php)?.*\\\
+    bend(if|for(each)?|while)\\b\n    |\\{\\{?\\/(if|foreach|capture|literal|foreach|php|section|strip)\n\
+    \    |^[^{]*\\}\n    ))"}
+increaseIndentMarkers: {!scope 'text.html': !regexp "(?x-mi:\n    <(?!\\?|area|base|br|col|hr|img|input|link|meta|param|[^>]*\\\
+    />)\n      ([A-Za-z0-9]+)(?=\\s|>)\\b[^>]*>(?!.*<\\/\\1>)\n    |<!--(?!.*-->)\n\
+    \    |<\\?php.+?\\b(if|else(?:if)?|for(?:each)?|while)\\b.*:(?!.*end\\1)\n   \
+    \ |\\{[^}\"']*$)"}
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: git://github.com/aptana/html.ruble.git
+visible: true
