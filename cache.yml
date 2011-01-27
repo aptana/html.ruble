@@ -446,22 +446,20 @@ children:
   displayName: HTML
   path: bundle.rb
   scope: text.html
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: snippet-e6ca3551-ba8c-4e00-90a7-4da287fec6ae,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: snippet-d1e9eb59-056f-4cc2-9cd6-357d3c643a1d,
   path: bundle.rb, scope: text.html}
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-6c550e44-0fcc-4266-a055-731f08f44463
-  pairs: [&id002 '"', *id002, &id003 (, &id004 ), &id005 '{', &id006 '}', &id007 '[',
-    &id008 ']', &id009 <, &id010 '>']
+  displayName: smart_typing_pairs-983e6711-aafc-4236-9034-62bb8cfdcc13
+  pairs: [<, '>']
   path: bundle.rb
   scope: text.html
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-9a87433a-4006-4c72-b726-6ec717555b92
-  pairs: [*id002, *id002, *id003, *id004, *id005, *id006, *id007, *id008, *id009,
-    *id010, &id011 '''', *id011]
+  displayName: smart_typing_pairs-82d59875-6e52-4a9f-bf1c-1f4f501d70c9
+  pairs: [&id002 '"', *id002, (, ), '{', '}', '[', ']', &id003 '''', *id003]
   path: bundle.rb
-  scope: meta.tag
+  scope: text.html meta.tag - punctuation.definition.tag.begin
 - !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
   displayName: 'Help: Persistent Includes', inputPath: null, keyBindingMap: null,
   outputPath: null, outputType: show_as_html, path: commands/about_persistent_includes.rb,

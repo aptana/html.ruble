@@ -143,5 +143,5 @@ env "text.html" do |e|
 end
 
 # Smart character pairs
-smart_typing_pairs["text.html"] = ['"', '"', '(', ')', '{', '}', '[', ']', '<', '>']
-smart_typing_pairs["meta.tag"] = ['"', '"', '(', ')', '{', '}', '[', ']', '<', '>', "'", "'"]
+smart_typing_pairs["text.html"] = ['<', '>']
+smart_typing_pairs["text.html meta.tag - punctuation.definition.tag.begin"] = ['"', '"', '(', ')', '{', '}', '[', ']', "'", "'"]
