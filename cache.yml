@@ -1,472 +1,11 @@
 !!com.aptana.scripting.model.BundleElement
 author: Christopher Williams
 children:
-- !!com.aptana.scripting.model.MenuElement
-  children:
-  - children: &id001 []
-    commandName: Documentation for Tag
-    customProperties: null
-    displayName: Documentation for Tag
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Validate Syntax (W3C)
-    customProperties: null
-    displayName: Validate Syntax (W3C)
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: '-'
-    customProperties: null
-    displayName: '-'
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Open Document in Internal Browser
-    customProperties: null
-    displayName: Open Document in Internal Browser
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Open Document in Default Browser
-    customProperties: null
-    displayName: Open Document in Default Browser
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Open Document in Running Browser(s)
-    customProperties: null
-    displayName: Open Document in Running Browser(s)
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Refresh Running Browser(s)
-    customProperties: null
-    displayName: Refresh Running Browser(s)
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: '-'
-    customProperties: null
-    displayName: '-'
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: Convert Character / Selection to Entities
-      customProperties: null
-      displayName: Convert Character / Selection to Entities
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Convert Character / Selection to Entities Excl. Tags
-      customProperties: null
-      displayName: Convert Character / Selection to Entities Excl. Tags
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Decode Entities in Line / Selection
-      customProperties: null
-      displayName: Decode Entities in Line / Selection
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: '-'
-      customProperties: null
-      displayName: '-'
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Non-Breaking Space
-      customProperties: null
-      displayName: Non-Breaking Space
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: right
-      customProperties: null
-      displayName: right
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: left
-      customProperties: null
-      displayName: left
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: backtab
-      customProperties: null
-      displayName: backtab
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: enter
-      customProperties: null
-      displayName: enter
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: control
-      customProperties: null
-      displayName: control
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: delete
-      customProperties: null
-      displayName: delete
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: return
-      customProperties: null
-      displayName: return
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: tab
-      customProperties: null
-      displayName: tab
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: backspace
-      customProperties: null
-      displayName: backspace
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: command
-      customProperties: null
-      displayName: command
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: down
-      customProperties: null
-      displayName: down
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: arrow
-      customProperties: null
-      displayName: arrow
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: up
-      customProperties: null
-      displayName: up
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: shift
-      customProperties: null
-      displayName: shift
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: escape
-      customProperties: null
-      displayName: escape
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: option
-      customProperties: null
-      displayName: option
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: '-'
-      customProperties: null
-      displayName: '-'
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Insert Entity...
-      customProperties: null
-      displayName: Insert Entity...
-      path: bundle.rb
-      scope: null
-    commandName: Entities
-    customProperties: null
-    displayName: Entities
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: URL Escape Line / Selection
-      customProperties: null
-      displayName: URL Escape Line / Selection
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: URL Unescape Line / Selection
-      customProperties: null
-      displayName: URL Unescape Line / Selection
-      path: bundle.rb
-      scope: null
-    commandName: URL Escapes
-    customProperties: null
-    displayName: URL Escapes
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Encrypt Line / Selection (ROT 13)
-    customProperties: null
-    displayName: Encrypt Line / Selection (ROT 13)
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: '-'
-    customProperties: null
-    displayName: '-'
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Insert Open/Close Tag (With Current Word)
-    customProperties: null
-    displayName: Insert Open/Close Tag (With Current Word)
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Insert Close Tag
-    customProperties: null
-    displayName: Insert Close Tag
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: HTML - 4.01 Strict
-      customProperties: null
-      displayName: HTML - 4.01 Strict
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: HTML - 4.01 Transitional
-      customProperties: null
-      displayName: HTML - 4.01 Transitional
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: '-'
-      customProperties: null
-      displayName: '-'
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: XHTML - 1.0 Frameset
-      customProperties: null
-      displayName: XHTML - 1.0 Frameset
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: XHTML - 1.0 Strict
-      customProperties: null
-      displayName: XHTML - 1.0 Strict
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: XHTML - 1.0 Transitional
-      customProperties: null
-      displayName: XHTML - 1.0 Transitional
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: XHTML - 1.1
-      customProperties: null
-      displayName: XHTML - 1.1
-      path: bundle.rb
-      scope: null
-    commandName: Insert DocType
-    customProperties: null
-    displayName: Insert DocType
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: '-'
-    customProperties: null
-    displayName: '-'
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: Add Persistent Include
-      customProperties: null
-      displayName: Add Persistent Include
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Update Document
-      customProperties: null
-      displayName: Update Document
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: 'Help: Persistent Includes'
-      customProperties: null
-      displayName: 'Help: Persistent Includes'
-      path: bundle.rb
-      scope: null
-    commandName: Includes
-    customProperties: null
-    displayName: Includes
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: Strong
-      customProperties: null
-      displayName: Strong
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Emphasize
-      customProperties: null
-      displayName: Emphasize
-      path: bundle.rb
-      scope: null
-    commandName: Format
-    customProperties: null
-    displayName: Format
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: 'IE Conditional Comment: Internet Explorer 5.0 only'
-      customProperties: null
-      displayName: 'IE Conditional Comment: Internet Explorer 5.0 only'
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: 'IE Conditional Comment: Internet Explorer 5.5 only'
-      customProperties: null
-      displayName: 'IE Conditional Comment: Internet Explorer 5.5 only'
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: 'IE Conditional Comment: Internet Explorer 5.x'
-      customProperties: null
-      displayName: 'IE Conditional Comment: Internet Explorer 5.x'
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: 'IE Conditional Comment: Internet Explorer 6 and below'
-      customProperties: null
-      displayName: 'IE Conditional Comment: Internet Explorer 6 and below'
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: 'IE Conditional Comment: Internet Explorer 6 only'
-      customProperties: null
-      displayName: 'IE Conditional Comment: Internet Explorer 6 only'
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: 'IE Conditional Comment: Internet Explorer 7 and above'
-      customProperties: null
-      displayName: 'IE Conditional Comment: Internet Explorer 7 and above'
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: 'IE Conditional Comment: Internet Explorer'
-      customProperties: null
-      displayName: 'IE Conditional Comment: Internet Explorer'
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: 'IE Conditional Comment: NOT Internet Explorer'
-      customProperties: null
-      displayName: 'IE Conditional Comment: NOT Internet Explorer'
-      path: bundle.rb
-      scope: null
-    commandName: Conditional Comments
-    customProperties: null
-    displayName: Conditional Comments
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: '-'
-    customProperties: null
-    displayName: '-'
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Select Tag Pair and Content
-    customProperties: null
-    displayName: Select Tag Pair and Content
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: '-'
-    customProperties: null
-    displayName: '-'
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Wrap Selection in Open/Close Tag
-    customProperties: null
-    displayName: Wrap Selection in Open/Close Tag
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Wrap Each Selected Line in Open/Close Tag
-    customProperties: null
-    displayName: Wrap Each Selected Line in Open/Close Tag
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Wrap in <?= ... ?>
-    customProperties: null
-    displayName: Wrap in <?= ... ?>
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: '-'
-    customProperties: null
-    displayName: '-'
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Strip HTML Tags from Document / Selection
-    customProperties: null
-    displayName: Strip HTML Tags from Document / Selection
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Tidy
-    customProperties: null
-    displayName: Tidy
-    path: bundle.rb
-    scope: null
-  commandName: HTML
-  customProperties: null
-  displayName: HTML
-  path: bundle.rb
-  scope: text.html
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: snippet-e6ca3551-ba8c-4e00-90a7-4da287fec6ae,
-  path: bundle.rb, scope: text.html}
-- !!com.aptana.scripting.model.SmartTypingPairsElement
-  customProperties: null
-  displayName: smart_typing_pairs-6c550e44-0fcc-4266-a055-731f08f44463
-  pairs: [&id002 '"', *id002, &id003 (, &id004 ), &id005 '{', &id006 '}', &id007 '[',
-    &id008 ']', &id009 <, &id010 '>']
-  path: bundle.rb
-  scope: text.html
-- !!com.aptana.scripting.model.SmartTypingPairsElement
-  customProperties: null
-  displayName: smart_typing_pairs-9a87433a-4006-4c72-b726-6ec717555b92
-  pairs: [*id002, *id002, *id003, *id004, *id005, *id006, *id007, *id008, *id009,
-    *id010, &id011 '''', *id011]
-  path: bundle.rb
-  scope: meta.tag
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: 'Help: Persistent Includes', inputPath: null, keyBindingMap: null,
-  outputPath: null, outputType: show_as_html, path: commands/about_persistent_includes.rb,
-  runType: current_thread, scope: text.html, workingDirectoryType: UNDEFINED}
-- !!com.aptana.scripting.model.CommandElement
+- !command {async: false, customProperties: null, displayName: 'Help: Persistent Includes',
+  inputPath: null, keyBindingMap: null, outputPath: null, outputType: show_as_html,
+  path: commands/about_persistent_includes.rb, runType: current_thread, scope: text.html,
+  workingDirectoryType: UNDEFINED}
+- !command
   async: false
   customProperties: null
   displayName: Convert Character / Selection to Entities
@@ -479,7 +18,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Convert Character / Selection to Entities Excl. Tags
@@ -492,7 +31,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Decode Entities in Line / Selection
@@ -505,7 +44,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Forward Delete All Whitespace
@@ -518,7 +57,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Documentation for Tag
@@ -531,7 +70,7 @@ children:
   runType: current_thread
   scope: text.html, text.html entity.name.tag
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Encrypt Line / Selection (ROT 13)
@@ -544,11 +83,10 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: Insert Close Tag, inputPath: null, keyBindingMap: null, outputPath: null,
-  outputType: insert_as_text, path: commands/insert_close_tag.rb, runType: current_thread,
-  scope: null, workingDirectoryType: UNDEFINED}
-- !!com.aptana.scripting.model.CommandElement
+- !command {async: false, customProperties: null, displayName: Insert Close Tag, inputPath: null,
+  keyBindingMap: null, outputPath: null, outputType: insert_as_text, path: commands/insert_close_tag.rb,
+  runType: current_thread, scope: null, workingDirectoryType: UNDEFINED}
+- !command
   async: false
   customProperties: null
   displayName: Insert Entity...
@@ -561,7 +99,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Insert Open/Close Tag (With Current Word)
@@ -574,7 +112,7 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Add Persistent Include
@@ -587,15 +125,14 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: Open Document in Running Browser(s), inputPath: null, keyBindingMap: null,
-  outputPath: null, outputType: discard, path: commands/preview_in_all_active_browsers.rb,
+- !command {async: false, customProperties: null, displayName: Open Document in Running Browser(s),
+  inputPath: null, keyBindingMap: null, outputPath: null, outputType: discard, path: commands/preview_in_all_active_browsers.rb,
   runType: current_thread, scope: text.html, workingDirectoryType: UNDEFINED}
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: Open Document in Internal Browser, inputPath: null, keyBindingMap: null,
-  outputPath: null, outputType: show_as_html, path: commands/preview_in_browser.rb,
-  runType: current_thread, scope: text.html, workingDirectoryType: UNDEFINED}
-- !!com.aptana.scripting.model.CommandElement
+- !command {async: false, customProperties: null, displayName: Open Document in Internal Browser,
+  inputPath: null, keyBindingMap: null, outputPath: null, outputType: show_as_html,
+  path: commands/preview_in_browser.rb, runType: current_thread, scope: text.html,
+  workingDirectoryType: UNDEFINED}
+- !command
   async: false
   customProperties: null
   displayName: Open Document in Default Browser
@@ -608,7 +145,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Refresh Running Browser(s)
@@ -621,7 +158,7 @@ children:
   runType: current_thread
   scope: text.html, source.css
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Select Tag Pair and Content
@@ -634,11 +171,10 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: Strip HTML Tags from Document / Selection, inputPath: null, keyBindingMap: null,
-  outputPath: null, outputType: replace_selection, path: commands/strip_html_tags.rb,
-  runType: current_thread, scope: text.html, workingDirectoryType: UNDEFINED}
-- !!com.aptana.scripting.model.CommandElement
+- !command {async: false, customProperties: null, displayName: Strip HTML Tags from Document / Selection,
+  inputPath: null, keyBindingMap: null, outputPath: null, outputType: replace_selection,
+  path: commands/strip_html_tags.rb, runType: current_thread, scope: text.html, workingDirectoryType: UNDEFINED}
+- !command
   async: false
   customProperties: null
   displayName: Tidy
@@ -651,7 +187,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Update Document
@@ -664,7 +200,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: URL Escape Line / Selection
@@ -677,7 +213,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: URL Unescape Line / Selection
@@ -690,7 +226,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Validate Syntax (W3C)
@@ -703,7 +239,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Wrap Each Selected Line in Open/Close Tag
@@ -716,7 +252,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Quick BR
@@ -729,7 +265,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Quick HTML space
@@ -1297,7 +833,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Emphasize
@@ -1310,7 +846,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: [fieldset]
@@ -1323,7 +859,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: ['!']
@@ -1336,7 +872,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: ['!']
@@ -1349,7 +885,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: ['!']
@@ -1362,7 +898,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: ['!']
@@ -1375,7 +911,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: ['!']
@@ -1388,7 +924,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: ['!']
@@ -1401,7 +937,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: ['!']
@@ -1414,7 +950,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: ['!']
@@ -1427,7 +963,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Strong
@@ -1440,11 +976,10 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: 'Wrap in <?= ... ?>', inputPath: null, keyBindingMap: null, outputPath: null,
-  outputType: insert_as_snippet, path: snippets/snippets.rb, runType: current_thread,
-  scope: text.html string, workingDirectoryType: UNDEFINED}
-- !!com.aptana.scripting.model.CommandElement
+- !command {async: false, customProperties: null, displayName: 'Wrap in <?= ... ?>',
+  inputPath: null, keyBindingMap: null, outputPath: null, outputType: insert_as_snippet,
+  path: snippets/snippets.rb, runType: current_thread, scope: text.html string, workingDirectoryType: UNDEFINED}
+- !command
   async: false
   customProperties: null
   displayName: Wrap Selection in Open/Close Tag
@@ -1457,7 +992,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: [body]
@@ -1470,7 +1005,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: [div]
@@ -1483,7 +1018,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: [form]
@@ -1496,7 +1031,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: [h1]
@@ -1509,7 +1044,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: [head]
@@ -1522,7 +1057,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: [title]
@@ -1610,7 +1145,7 @@ decreaseIndentMarkers: {!scope 'text.html': !regexp "(?x-mi:\n    ^\\s*\n    (<\
 description: Support for HTML, converted from TextMate.
 displayName: HTML
 fileTypeRegistry: {}
-fileTypes: *id001
+fileTypes: []
 foldingStartMarkers: {!scope 'text.html': !regexp "(?x-mi:\n    (<(?i:body|div|dd|dl|embed|fieldset|form|frame|head|html|menu|object|ol|script|select|style|table|tbody|thead|tfoot|tr|ul)\\\
     b.*?>\n    |<!--(?!.*--\\s*>)\n    |^<!--\\ \\#tminclude\\ (?>.*?-->)$\n    |<\\\
     ?(?:php)?.*\\b(if|for(each)?|while)\\b.+:\n    |\\{\\{?(if|foreach|capture|literal|foreach|php|section|strip)\n\
