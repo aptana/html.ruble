@@ -446,17 +446,17 @@ children:
   displayName: HTML
   path: bundle.rb
   scope: text.html
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: snippet-b86eda3a-e1c9-4651-8b41-26b4d5919c49,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: snippet-078804d9-37bf-4ff4-8458-84e237521bf9,
   path: bundle.rb, scope: text.html}
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-f2efb57e-fdae-4787-92fc-8a5afff5510a
+  displayName: smart_typing_pairs-e73240a3-a5b4-4fdc-a7ef-0f1f45b70187
   pairs: [<, '>']
   path: bundle.rb
   scope: text.html
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-5ee0e98b-be87-4ee4-8636-61b07e700912
+  displayName: smart_typing_pairs-03a69cb5-e73f-4de4-89fe-dc8268677f95
   pairs: [&id002 '"', *id002, (, ), '{', '}', '[', ']', &id003 '''', *id003]
   path: bundle.rb
   scope: text.html meta.tag - punctuation.definition.tag.begin
@@ -1600,7 +1600,7 @@ children:
   displayName: SVG Template, filetype: '*.html', inputPath: null, keyBindingMap: null,
   outputPath: null, outputType: discard, path: templates/templates.rb, runType: current_thread,
   scope: null, workingDirectoryType: UNDEFINED}
-copyright: © Copyright 2010 Aptana Inc. Distributed under the MIT license.
+copyright: Copyright 2010 Aptana Inc. Distributed under the MIT license.
 customProperties: null
 decreaseIndentMarkers: {!scope 'text.html': !regexp "(?x-mi:\n    ^\\s*\n    (<\\\
     /(?!html)\n      [A-Za-z0-9]+\\b[^>]*>\n    |-->\n    |<\\?(php)?\\s+(else(if)?|end(if|for(each)?|while))\n\

@@ -2,7 +2,7 @@ require 'ruble'
 
 bundle do |bundle|
   bundle.author = 'Christopher Williams'
-  bundle.copyright = "© Copyright 2010 Aptana Inc. Distributed under the MIT license."
+  bundle.copyright = "Copyright 2010 Aptana Inc. Distributed under the MIT license."
   bundle.display_name = 'HTML'
   bundle.description = 'Support for HTML, converted from TextMate.'
   bundle.repository = "git://github.com/aptana/html.ruble.git"
