@@ -394,18 +394,6 @@ children:
     path: bundle.rb
     scope: null
   - children: *id001
-    commandName: Select Tag Pair and Content
-    customProperties: null
-    displayName: Select Tag Pair and Content
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: '-'
-    customProperties: null
-    displayName: '-'
-    path: bundle.rb
-    scope: null
-  - children: *id001
     commandName: Wrap Selection in Open/Close Tag
     customProperties: null
     displayName: Wrap Selection in Open/Close Tag
@@ -446,21 +434,25 @@ children:
   displayName: HTML
   path: bundle.rb
   scope: text.html
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-ab6a5d89-ecf1-4504-93c1-dc836963f717,
-  path: bundle.rb, scope: text.html}
+- !environment
+  customProperties: null
+  displayName: environment-564dc65b-c366-47d3-9184-260ce0bed70e
+  invokeBlock: !!org.jruby.RubyProc {}
+  path: bundle.rb
+  scope: text.html
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-46ef7298-0a7c-42b2-b06a-4e587b53874b
+  displayName: smart_typing_pairs-f25db092-fa80-4d2c-8f9d-18da481f1503
   pairs: [<, '>']
   path: bundle.rb
   scope: text.html
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-7d63fb53-abdc-4a43-af39-37b3797f5390
+  displayName: smart_typing_pairs-271b9b11-5afe-4b70-bf67-1ff8e5851711
   pairs: [&id002 '"', *id002, (, ), '{', '}', '[', ']', &id003 '''', *id003]
   path: bundle.rb
   scope: text.html meta.tag - punctuation.definition.tag.begin
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: 'Help: Persistent Includes'
@@ -473,7 +465,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Convert Character / Selection to Entities
@@ -487,7 +479,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Convert Character / Selection to Entities Excl. Tags
@@ -501,7 +493,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Decode Entities in Line / Selection
@@ -515,7 +507,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Forward Delete All Whitespace
@@ -529,7 +521,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Documentation for Tag
@@ -543,7 +535,7 @@ children:
   runType: current_thread
   scope: text.html, text.html entity.name.tag
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Encrypt Line / Selection (ROT 13)
@@ -557,20 +549,21 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Insert Close Tag
   input: [none]
   inputPath: null
-  keyBindingMap: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+.]
   outputPath: null
   outputType: insert_as_text
   path: commands/insert_close_tag.rb
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Insert Entity...
@@ -584,7 +577,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Insert Open/Close Tag (With Current Word)
@@ -598,21 +591,7 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: Add Persistent Include
-  input: [none]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+COMMAND+I]
-  outputPath: null
-  outputType: insert_as_text
-  path: commands/persistent_include.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Open Document in Running Browser(s)
@@ -625,7 +604,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Open Document in Internal Browser
@@ -638,7 +617,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Open Document in Default Browser
@@ -652,7 +631,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Refresh Running Browser(s)
@@ -666,21 +645,7 @@ children:
   runType: current_thread
   scope: text.html, source.css
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: Select Tag Pair and Content
-  input: [none]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+.]
-  outputPath: null
-  outputType: discard
-  path: commands/select_tag_pair_and_contents.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Strip HTML Tags from Document / Selection
@@ -693,7 +658,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Tidy
@@ -707,7 +672,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Update Document
@@ -721,7 +686,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: URL Escape Line / Selection
@@ -735,7 +700,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: URL Unescape Line / Selection
@@ -749,7 +714,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Validate Syntax (W3C)
@@ -763,7 +728,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Wrap Each Selected Line in Open/Close Tag
@@ -777,7 +742,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Quick BR
@@ -791,7 +756,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Quick HTML space
@@ -1408,7 +1373,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Emphasize
@@ -1422,7 +1387,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: [fieldset]
@@ -1436,7 +1401,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: ['!']
@@ -1450,7 +1415,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: ['!']
@@ -1464,7 +1429,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: ['!']
@@ -1478,7 +1443,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: ['!']
@@ -1492,7 +1457,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: ['!']
@@ -1506,7 +1471,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: ['!']
@@ -1520,7 +1485,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: ['!']
@@ -1534,7 +1499,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: ['!']
@@ -1548,7 +1513,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Strong
@@ -1562,7 +1527,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Wrap in <?= ... ?>
@@ -1575,7 +1540,7 @@ children:
   runType: current_thread
   scope: text.html string
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Wrap Selection in Open/Close Tag
@@ -1589,7 +1554,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: [body]
@@ -1603,7 +1568,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: [div]
@@ -1617,7 +1582,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: [form]
@@ -1631,7 +1596,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: [h1]
@@ -1645,7 +1610,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: [head]
@@ -1659,7 +1624,7 @@ children:
   runType: current_thread
   scope: text.html
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties:
     prefix_values: [title]
@@ -1684,7 +1649,7 @@ children:
     version of Paul Irish''s HTML5 Boilerplate project for those without network access,
     current as of 2010-08-18.', displayName: HTML5 Boilerplate (Cached), location: templates/html5_template.zip,
   path: templates/project_templates.rb, scope: null, type: WEB}
-- !!com.aptana.scripting.model.TemplateElement
+- !template
   async: false
   customProperties: null
   displayName: HTML - 4.01 Strict Template (*.html)
@@ -1698,7 +1663,7 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement
+- !template
   async: false
   customProperties: null
   displayName: HTML - 4.01 Transitional Template (*.html)
@@ -1712,7 +1677,7 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement
+- !template
   async: false
   customProperties: null
   displayName: XHTML - 1.0 Strict Template (*.html)
@@ -1726,7 +1691,7 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement
+- !template
   async: false
   customProperties: null
   displayName: XHTML - 1.0 Strict Template (*.xhtml)
@@ -1740,7 +1705,7 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement
+- !template
   async: false
   customProperties: null
   displayName: XHTML - 1.0 Transitional Template (*.html)
@@ -1754,7 +1719,7 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement
+- !template
   async: false
   customProperties: null
   displayName: XHTML - 1.0 Transitional Template (*.xhtml)
@@ -1768,7 +1733,7 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement
+- !template
   async: false
   customProperties: null
   displayName: XHTML - 1.0 Frameset Template (*.html)
@@ -1782,7 +1747,7 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement
+- !template
   async: false
   customProperties: null
   displayName: XHTML - 1.0 Frameset Template (*.xhtml)
@@ -1796,7 +1761,7 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement
+- !template
   async: false
   customProperties: null
   displayName: XHTML - 1.1 Template (*.html)
@@ -1810,7 +1775,7 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement
+- !template
   async: false
   customProperties: null
   displayName: XHTML - 1.1 Template (*.xhtml)
@@ -1824,7 +1789,7 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement
+- !template
   async: false
   customProperties: null
   displayName: HTML 5 Template
@@ -1838,49 +1803,7 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement
-  async: false
-  customProperties: null
-  displayName: IDL Template
-  filetype: '*.html'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement
-  async: false
-  customProperties: null
-  displayName: DTD Template
-  filetype: '*.html'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement
-  async: false
-  customProperties: null
-  displayName: SVG Template
-  filetype: '*.html'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-copyright: Copyright 2010 Aptana Inc. Distributed under the MIT license.
+copyright: © Copyright 2010 Aptana Inc. Distributed under the MIT license.
 customProperties: null
 decreaseIndentMarkers: {!scope 'text.html': !regexp "(?x-mi:\n    ^\\s*\n    (<\\\
     /(?!html)\n      [A-Za-z0-9]+\\b[^>]*>\n    |-->\n    |<\\?(php)?\\s+(else(if)?|end(if|for(each)?|while))\n\
@@ -1888,7 +1811,7 @@ decreaseIndentMarkers: {!scope 'text.html': !regexp "(?x-mi:\n    ^\\s*\n    (<\
 description: Support for HTML, converted from TextMate.
 displayName: HTML
 fileTypeRegistry: {}
-fileTypes: *id001
+fileTypes: []
 foldingStartMarkers: {!scope 'text.html': !regexp "(?x-mi:\n    (<(?i:body|div|dd|dl|embed|fieldset|form|frame|head|html|menu|object|ol|script|select|style|table|tbody|thead|tfoot|tr|ul)\\\
     b.*?>\n    |<!--(?!.*--\\s*>)\n    |^<!--\\ \\#tminclude\\ (?>.*?-->)$\n    |<\\\
     ?(?:php)?.*\\b(if|for(each)?|while)\\b.+:\n    |\\{\\{?(if|foreach|capture|literal|foreach|php|section|strip)\n\
