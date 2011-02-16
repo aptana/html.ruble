@@ -35,7 +35,7 @@ template("HTML 5 Template") do |t|
 end
 
 template("IDL Template") do |t|
-  t.filetype = "*.html"
+  t.filetype = "*.idl"
   t.invoke do |context|
     ENV['TM_DATE'] = Time.now.strftime("%Y-%m-%d")
     raw_contents = IO.read("#{ENV['TM_BUNDLE_SUPPORT']}/../templates/template.idl")
@@ -44,7 +44,7 @@ template("IDL Template") do |t|
 end
 
 template("DTD Template") do |t|
-  t.filetype = "*.html"
+  t.filetype = "*.dtd"
   t.invoke do |context|
     ENV['TM_DATE'] = Time.now.strftime("%Y-%m-%d")
     raw_contents = IO.read("#{ENV['TM_BUNDLE_SUPPORT']}/../templates/template.dtd")
@@ -53,7 +53,7 @@ template("DTD Template") do |t|
 end
 
 template("SVG Template") do |t|
-  t.filetype = "*.html"
+  t.filetype = "*.svg"
   t.invoke do |context|
     ENV['TM_DATE'] = Time.now.strftime("%Y-%m-%d")
     raw_contents = IO.read("#{ENV['TM_BUNDLE_SUPPORT']}/../templates/template.svg")
