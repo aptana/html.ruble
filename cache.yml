@@ -400,6 +400,12 @@ children:
     path: bundle.rb
     scope: null
   - children: *id001
+    commandName: Select Tag Content
+    customProperties: null
+    displayName: Select Tag Content
+    path: bundle.rb
+    scope: null
+  - children: *id001
     commandName: '-'
     customProperties: null
     displayName: '-'
@@ -446,11 +452,11 @@ children:
   displayName: HTML
   path: bundle.rb
   scope: text.html
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-938642af-1d5b-4fdf-88a6-255c359a4335,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-f6310081-4a8b-4b6f-ae72-4cc08fb44089,
   path: bundle.rb, scope: text.html}
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-37906642-d912-4f2a-ad05-ad7caff391f8
+  displayName: smart_typing_pairs-d91fef1b-a73a-447f-96e8-d3cf789239fb
   pairs: ['"', '"', (, ), '{', '}', '[', ']', '''', '''']
   path: bundle.rb
   scope: text.html meta.tag - punctuation.definition.tag.begin
@@ -658,6 +664,20 @@ children:
   path: commands/refresh_all_active_browsers.rb
   runType: current_thread
   scope: text.html, source.css
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Select Tag Content
+  input: [none]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+/]
+  outputPath: null
+  outputType: discard
+  path: commands/select_tag_contents.rb
+  runType: current_thread
+  scope: text.html
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.CommandElement
   async: false
