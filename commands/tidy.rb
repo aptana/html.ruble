@@ -67,7 +67,7 @@ command 'Tidy' do |cmd|
     if status == 2 # Errors
     
       msg = "Errors: " + File.read(temp)
-      Ruble.exit_show_tool_tip msg # FIXME Have to do this our own way!
+      context.exit_show_tool_tip msg # FIXME Have to do this our own way!
     
     elsif status == 1 # Warnings - use output but also display notification with warnings
       

@@ -251,7 +251,7 @@ end # End Snippets with scope 'text.html'
 
 # -----------------------------------------------------------------------------------
 # Snippets that used env vars and needed to be converted to commands
-with_defaults :scope => 'text.html', :input => :none, :output => :insert_as_snippet do |bundle|
+with_defaults :scope => 'text.html - source', :input => :none, :output => :insert_as_snippet do |bundle|
 
   command 'Emphasize' do |cmd|
     cmd.key_binding = 'M1+M2+I'
