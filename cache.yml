@@ -441,22 +441,16 @@ children:
     displayName: Strip HTML Tags from Document / Selection
     path: bundle.rb
     scope: null
-  - children: *id001
-    commandName: Tidy
-    customProperties: null
-    displayName: Tidy
-    path: bundle.rb
-    scope: null
   commandName: HTML
   customProperties: null
   displayName: HTML
   path: bundle.rb
   scope: text.html
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-da45afad-cf01-4f1d-9f66-88ab358f4188,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-1d80c87e-3671-415d-948a-c8c007bd7922,
   path: bundle.rb, scope: text.html}
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-15845fda-7030-4f19-ba72-5e2f07595c08
+  displayName: smart_typing_pairs-07320184-18a3-4854-b134-176ef4835928
   pairs: ['"', '"', (, ), '{', '}', '[', ']', '''', '''']
   path: bundle.rb
   scope: text.html meta.tag - punctuation.definition.tag.begin
@@ -657,8 +651,7 @@ children:
   displayName: Refresh Running Browser(s)
   input: [none]
   inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+R]
+  keyBindingMap: null
   outputPath: null
   outputType: discard
   path: commands/refresh_all_active_browsers.rb
@@ -1686,18 +1679,227 @@ children:
   runType: current_thread
   scope: text.html - source
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.ProjectTemplateElement {customProperties: null, description: A basic template which includes only a default index.html file,
-  displayName: Basic Web Template, location: templates/basic_web_template.zip, path: templates/project_templates.rb,
-  scope: null, type: WEB}
-- !!com.aptana.scripting.model.ProjectTemplateElement {customProperties: null, description: 'Paul
-    Irish''s HTML5 Boilerplate (http://html5boilerplate.com/). Requires network access.',
-  displayName: HTML5 Boilerplate, location: 'git://github.com/paulirish/html5-boilerplate.git',
-  path: templates/project_templates.rb, scope: null, type: WEB}
-- !!com.aptana.scripting.model.ProjectTemplateElement {customProperties: null, description: 'Cached
-    version of Paul Irish''s HTML5 Boilerplate project for those without network access,
-    current as of 2010-08-18.', displayName: HTML5 Boilerplate (Cached), location: templates/html5_template.zip,
-  path: templates/project_templates.rb, scope: null, type: WEB}
-copyright: Copyright 2010 Aptana Inc. Distributed under the MIT license.
+- !!com.aptana.scripting.model.ProjectTemplateElement
+  customProperties: {replace_parameters: false}
+  description: A basic template which includes only a default index.html file
+  displayName: Basic Web Template
+  location: templates/basic_web_template.zip
+  path: templates/project_templates.rb
+  scope: null
+  type: WEB
+- !!com.aptana.scripting.model.ProjectTemplateElement
+  customProperties: {replace_parameters: false}
+  description: Paul Irish's HTML5 Boilerplate (http://html5boilerplate.com/). Requires network access.
+  displayName: HTML5 Boilerplate
+  location: git://github.com/paulirish/html5-boilerplate.git
+  path: templates/project_templates.rb
+  scope: null
+  type: WEB
+- !!com.aptana.scripting.model.ProjectTemplateElement
+  customProperties: {replace_parameters: false}
+  description: Cached version of Paul Irish's HTML5 Boilerplate project for those without network access, current as of 2010-08-18.
+  displayName: HTML5 Boilerplate (Cached)
+  location: templates/html5_template.zip
+  path: templates/project_templates.rb
+  scope: null
+  type: WEB
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: HTML - 4.01 Strict Template (*.html)
+  filetype: '*.html'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: HTML - 4.01 Transitional Template (*.html)
+  filetype: '*.html'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: XHTML - 1.0 Strict Template (*.html)
+  filetype: '*.html'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: XHTML - 1.0 Strict Template (*.xhtml)
+  filetype: '*.xhtml'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: XHTML - 1.0 Transitional Template (*.html)
+  filetype: '*.html'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: XHTML - 1.0 Transitional Template (*.xhtml)
+  filetype: '*.xhtml'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: XHTML - 1.0 Frameset Template (*.html)
+  filetype: '*.html'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: XHTML - 1.0 Frameset Template (*.xhtml)
+  filetype: '*.xhtml'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: XHTML - 1.1 Template (*.html)
+  filetype: '*.html'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: XHTML - 1.1 Template (*.xhtml)
+  filetype: '*.xhtml'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: HTML 5 Template
+  filetype: '*.html'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: IDL Template
+  filetype: '*.idl'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: DTD Template
+  filetype: '*.dtd'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: SVG Template
+  filetype: '*.svg'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+copyright: Copyright 2011 Aptana. Distributed under the MIT license.
 customProperties: null
 decreaseIndentMarkers: {!scope 'text.html': !regexp "(?x-mi:\n    ^\\s*\n    (<\\\
     /(?!html)\n      [A-Za-z0-9]+\\b[^>]*>\n    |-->\n    |<\\?(php)?\\s+(else(if)?|end(if|for(each)?|while))\n\

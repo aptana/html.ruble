@@ -2,7 +2,7 @@ require 'ruble'
 
 bundle do |bundle|
   bundle.author = 'Christopher Williams'
-  bundle.copyright = "Copyright 2010 Aptana Inc. Distributed under the MIT license."
+  bundle.copyright = "Copyright 2011 Aptana. Distributed under the MIT license."
   bundle.display_name = 'HTML'
   bundle.description = 'Support for HTML, converted from TextMate.'
   bundle.repository = "git://github.com/aptana/html.ruble.git"
@@ -129,7 +129,6 @@ bundle do |bundle|
     menu.command 'Wrap in <?= ... ?>'
     menu.separator
     menu.command 'Strip HTML Tags from Document / Selection'
-    menu.command 'Tidy'
   end
 end
 
