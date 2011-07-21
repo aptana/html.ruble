@@ -446,11 +446,11 @@ children:
   displayName: HTML
   path: bundle.rb
   scope: text.html
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-2e977fef-c574-4e41-afcb-b5bc320cf724,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-21a8e33d-4af5-4e24-855b-1b17fede1c88,
   path: bundle.rb, scope: text.html}
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-64c95d4a-5f32-461a-adee-729e509e2c13
+  displayName: smart_typing_pairs-400ecd0f-891c-4bad-9a4b-531e0cfb88bc
   pairs: ['"', '"', (, ), '{', '}', '[', ']', '''', '''']
   path: bundle.rb
   scope: text.html meta.tag - punctuation.definition.tag.begin
