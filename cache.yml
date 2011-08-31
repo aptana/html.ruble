@@ -508,48 +508,6 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !template
-  async: false
-  customProperties: null
-  displayName: IDL Template
-  filetype: '*.idl'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !template
-  async: false
-  customProperties: null
-  displayName: DTD Template
-  filetype: '*.dtd'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !template
-  async: false
-  customProperties: null
-  displayName: SVG Template
-  filetype: '*.svg'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.MenuElement
   children:
   - children: &id001 []
