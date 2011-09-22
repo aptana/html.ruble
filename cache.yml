@@ -953,11 +953,11 @@ children:
   displayName: HTML
   path: bundle.rb
   scope: text.html
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-7965b862-ea59-4e57-8c75-b03710e840dc,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-f3baa023-6a3a-4643-8438-f4575faf85fe,
   path: bundle.rb, scope: text.html}
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-177c9788-e275-413a-9486-c3e2ede1e2ce
+  displayName: smart_typing_pairs-1ebba799-7cae-448f-b2ed-013b2a853825
   pairs: ['"', '"', (, ), '{', '}', '[', ']', '''', '''']
   path: bundle.rb
   scope: text.html meta.tag - punctuation.definition.tag.begin
@@ -1325,24 +1325,6 @@ children:
     prefix_values: [right]
   displayName: right
   expansion: '&#x2192;'
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: snippets/snippets.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.SnippetElement
-  async: false
-  customProperties:
-    prefix_values: [select]
-  displayName: Select Box
-  expansion: "<select name=\"${1:some_name}\" id=\"${2:$1}\"${3:${4: multiple}${5:\
-    \ onchange=\"${6:}\"}${7: size=\"${8:1}\"}}>\n\t<option${9: value=\"${10:option1}\"\
-    }>${11:$10}</option>\n\t<option${12: value=\"${13:option2}\"}>${14:$13}</option>${15:}\n\
-    \t$0\n</select>"
   input: [none]
   inputPath: null
   keyBindingMap: null

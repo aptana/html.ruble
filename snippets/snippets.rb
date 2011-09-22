@@ -148,15 +148,15 @@ snippet 'right' do |s|
   s.trigger = 'right'
   s.expansion = '&#x2192;'
 end
-# FIXME This has nested tab stops and way too many of them!
-snippet 'Select Box' do |s|
-  s.trigger = 'select'
-  s.expansion = '<select name="${1:some_name}" id="${2:$1}"${3:${4: multiple}${5: onchange="${6:}"}${7: size="${8:1}"}}>
-	<option${9: value="${10:option1}"}>${11:$10}</option>
-	<option${12: value="${13:option2}"}>${14:$13}</option>${15:}
-	$0
-</select>'
-end
+# FIXME Not currently working due to unsupported TextMate functionality
+# snippet 'Select Box' do |s|
+  # s.trigger = 'select'
+  # s.expansion = '<select name="${1:some_name}" id="${2:$1}"${3:${4: multiple}${5: onchange="${6:}"}${7: size="${8:1}"}}>
+	# <option${9: value="${10:option1}"}>${11:$10}</option>
+	# <option${12: value="${13:option2}"}>${14:$13}</option>${15:}
+	# $0
+# </select>'
+# end
 
 snippet 'shift' do |s|
   s.trigger = 'shift'
