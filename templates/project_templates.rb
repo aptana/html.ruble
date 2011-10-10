@@ -17,6 +17,6 @@ end
 project_template "HTML5 Boilerplate (Cached)" do |t|
   t.type = :web
   t.location = "templates/html5_template.zip"
-  t.description = "Cached version of Paul Irish's HTML5 Boilerplate project for those without network access, current as of 2010-08-18."
+  t.description = "Cached version of Paul Irish's HTML5 Boilerplate project for those without network access, current as of 2011-08-01."
   t.replace_parameters = false
 end
