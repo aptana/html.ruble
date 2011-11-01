@@ -9,7 +9,7 @@ end
 
 project_template "HTML5 Boilerplate" do |t|
   t.type = :web
-  t.location = "git://github.com/paulirish/html5-boilerplate.git"
+  t.location = "git://github.com/h5bp/html5-boilerplate.git"
   t.description = "Paul Irish's HTML5 Boilerplate (http://html5boilerplate.com/). Requires network access."
   t.replace_parameters = false
 end
