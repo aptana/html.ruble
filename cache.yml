@@ -1,513 +1,6 @@
 !!com.aptana.scripting.model.BundleElement
 author: Christopher Williams
 children:
-- !command
-  async: false
-  customProperties: null
-  displayName: 'Help: Persistent Includes'
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: show_as_html
-  path: commands/about_persistent_includes.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Convert Character / Selection to Entities
-  input: [selection, undefined]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
-  outputPath: null
-  outputType: replace_selection
-  path: commands/convert_to_html_entities.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Convert Character / Selection to Entities Excl. Tags
-  input: [selection, undefined]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
-  outputPath: null
-  outputType: replace_selection
-  path: commands/convert_to_named_entities_excl_tags.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Decode Entities in Line / Selection
-  input: [selection, line]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
-  outputPath: null
-  outputType: replace_selection
-  path: commands/decode_html_entities.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Forward Delete All Whitespace
-  input: [document]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+OPTION+DELETE]
-  outputPath: null
-  outputType: replace_selection
-  path: commands/delete_whitespace_between_tags.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Documentation for Tag
-  input: [none]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+H]
-  outputPath: null
-  outputType: show_as_html
-  path: commands/documentation_for_tag.rb
-  runType: current_thread
-  scope: text.html, text.html entity.name.tag
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Encrypt Line / Selection (ROT 13)
-  input: [selection, line]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
-  outputPath: null
-  outputType: replace_selection
-  path: commands/encrypt_line_selection_rot_13.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Insert Close Tag
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_text
-  path: commands/insert_close_tag.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Insert Entity...
-  input: [none]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
-  outputPath: null
-  outputType: insert_as_text
-  path: commands/insert_entity.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Insert Open/Close Tag (With Current Word)
-  input: [selection, word]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': ['CONTROL+M2+,']
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands/insert_tag_pair.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Add Persistent Include
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_text
-  path: commands/persistent_include.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Open Document in Running Browser(s)
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: commands/preview_in_all_active_browsers.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Open Document in Internal Browser
-  input: [document]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: show_as_html
-  path: commands/preview_in_browser.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Open Document in Default Browser
-  input: [none]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+P]
-  outputPath: null
-  outputType: discard
-  path: commands/preview_in_external_browser.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Refresh Running Browser(s)
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: commands/refresh_all_active_browsers.rb
-  runType: current_thread
-  scope: text.html, source.css
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Select Tag Content
-  input: [none]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+/]
-  outputPath: null
-  outputType: discard
-  path: commands/select_tag_contents.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Select Tag Pair and Content
-  input: [none]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+.]
-  outputPath: null
-  outputType: discard
-  path: commands/select_tag_pair_and_contents.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Strip HTML Tags from Document / Selection
-  input: [selection, document]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: replace_selection
-  path: commands/strip_html_tags.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Tidy
-  input: [document]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+H]
-  outputPath: null
-  outputType: replace_document
-  path: commands/tidy.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Update Document
-  input: [document]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+COMMAND+U]
-  outputPath: null
-  outputType: replace_document
-  path: commands/update_includes.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: URL Escape Line / Selection
-  input: [selection, line]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
-  outputPath: null
-  outputType: replace_selection
-  path: commands/url_escape.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: URL Unescape Line / Selection
-  input: [selection, line]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
-  outputPath: null
-  outputType: replace_selection
-  path: commands/url_unescape.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Validate Syntax (W3C)
-  input: [document]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+V]
-  outputPath: null
-  outputType: show_as_html
-  path: commands/w3c_validation.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Wrap Each Selected Line in Open/Close Tag
-  input: [selection, line]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+SHIFT+COMMAND+W]
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands/wrap_each_selected_line_in_open_close_tag.rb
-  runType: current_thread
-  scope: text.html
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.ProjectTemplateElement
-  customProperties: {replace_parameters: false}
-  description: A basic template which includes only a default index.html file
-  displayName: Basic Web Template
-  location: templates/basic_web_template.zip
-  path: templates/project_templates.rb
-  scope: null
-  type: WEB
-- !!com.aptana.scripting.model.ProjectTemplateElement
-  customProperties: {replace_parameters: false}
-  description: Paul Irish's HTML5 Boilerplate (http://html5boilerplate.com/). Requires network access.
-  displayName: HTML5 Boilerplate
-  location: git://github.com/paulirish/html5-boilerplate.git
-  path: templates/project_templates.rb
-  scope: null
-  type: WEB
-- !!com.aptana.scripting.model.ProjectTemplateElement
-  customProperties: {replace_parameters: false}
-  description: Cached version of Paul Irish's HTML5 Boilerplate project for those without network access, current as of 2010-08-18.
-  displayName: HTML5 Boilerplate (Cached)
-  location: templates/html5_template.zip
-  path: templates/project_templates.rb
-  scope: null
-  type: WEB
-- !template
-  async: false
-  customProperties: null
-  displayName: HTML - 4.01 Strict Template (*.html)
-  filetype: '*.html'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !template
-  async: false
-  customProperties: null
-  displayName: HTML - 4.01 Transitional Template (*.html)
-  filetype: '*.html'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !template
-  async: false
-  customProperties: null
-  displayName: XHTML - 1.0 Strict Template (*.html)
-  filetype: '*.html'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !template
-  async: false
-  customProperties: null
-  displayName: XHTML - 1.0 Strict Template (*.xhtml)
-  filetype: '*.xhtml'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !template
-  async: false
-  customProperties: null
-  displayName: XHTML - 1.0 Transitional Template (*.html)
-  filetype: '*.html'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !template
-  async: false
-  customProperties: null
-  displayName: XHTML - 1.0 Transitional Template (*.xhtml)
-  filetype: '*.xhtml'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !template
-  async: false
-  customProperties: null
-  displayName: XHTML - 1.0 Frameset Template (*.html)
-  filetype: '*.html'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !template
-  async: false
-  customProperties: null
-  displayName: XHTML - 1.0 Frameset Template (*.xhtml)
-  filetype: '*.xhtml'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !template
-  async: false
-  customProperties: null
-  displayName: XHTML - 1.1 Template (*.html)
-  filetype: '*.html'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !template
-  async: false
-  customProperties: null
-  displayName: XHTML - 1.1 Template (*.xhtml)
-  filetype: '*.xhtml'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !template
-  async: false
-  customProperties: null
-  displayName: HTML 5 Template
-  filetype: '*.html'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.MenuElement
   children:
   - children: &id001 []
@@ -953,14 +446,343 @@ children:
   displayName: HTML
   path: bundle.rb
   scope: text.html
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-f3baa023-6a3a-4643-8438-f4575faf85fe,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-1eb0f126-7583-40ed-8c9a-9ed1b5a4b4f7,
   path: bundle.rb, scope: text.html}
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-1ebba799-7cae-448f-b2ed-013b2a853825
+  displayName: smart_typing_pairs-af814a42-f52a-4bbd-b41b-91a3f1face57
   pairs: ['"', '"', (, ), '{', '}', '[', ']', '''', '''']
   path: bundle.rb
   scope: text.html meta.tag - punctuation.definition.tag.begin
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: 'Help: Persistent Includes'
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: show_as_html
+  path: commands/about_persistent_includes.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Convert Character / Selection to Entities
+  input: [selection, undefined]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
+  outputPath: null
+  outputType: replace_selection
+  path: commands/convert_to_html_entities.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Convert Character / Selection to Entities Excl. Tags
+  input: [selection, undefined]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
+  outputPath: null
+  outputType: replace_selection
+  path: commands/convert_to_named_entities_excl_tags.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Decode Entities in Line / Selection
+  input: [selection, line]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
+  outputPath: null
+  outputType: replace_selection
+  path: commands/decode_html_entities.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Forward Delete All Whitespace
+  input: [document]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+OPTION+DELETE]
+  outputPath: null
+  outputType: replace_selection
+  path: commands/delete_whitespace_between_tags.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Documentation for Tag
+  input: [none]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+H]
+  outputPath: null
+  outputType: show_as_html
+  path: commands/documentation_for_tag.rb
+  runType: current_thread
+  scope: text.html, text.html entity.name.tag
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Encrypt Line / Selection (ROT 13)
+  input: [selection, line]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
+  outputPath: null
+  outputType: replace_selection
+  path: commands/encrypt_line_selection_rot_13.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Insert Close Tag
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_text
+  path: commands/insert_close_tag.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Insert Entity...
+  input: [none]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
+  outputPath: null
+  outputType: insert_as_text
+  path: commands/insert_entity.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Insert Open/Close Tag (With Current Word)
+  input: [selection, word]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': ['CONTROL+M2+,']
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands/insert_tag_pair.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Add Persistent Include
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_text
+  path: commands/persistent_include.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Open Document in Running Browser(s)
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/preview_in_all_active_browsers.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Open Document in Internal Browser
+  input: [document]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: show_as_html
+  path: commands/preview_in_browser.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Open Document in Default Browser
+  input: [none]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+P]
+  outputPath: null
+  outputType: discard
+  path: commands/preview_in_external_browser.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Refresh Running Browser(s)
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/refresh_all_active_browsers.rb
+  runType: current_thread
+  scope: text.html, source.css
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Select Tag Content
+  input: [none]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+/]
+  outputPath: null
+  outputType: discard
+  path: commands/select_tag_contents.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Select Tag Pair and Content
+  input: [none]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+.]
+  outputPath: null
+  outputType: discard
+  path: commands/select_tag_pair_and_contents.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Strip HTML Tags from Document / Selection
+  input: [selection, document]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: replace_selection
+  path: commands/strip_html_tags.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Tidy
+  input: [document]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+H]
+  outputPath: null
+  outputType: replace_document
+  path: commands/tidy.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Update Document
+  input: [document]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+COMMAND+U]
+  outputPath: null
+  outputType: replace_document
+  path: commands/update_includes.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: URL Escape Line / Selection
+  input: [selection, line]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
+  outputPath: null
+  outputType: replace_selection
+  path: commands/url_escape.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: URL Unescape Line / Selection
+  input: [selection, line]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+7]
+  outputPath: null
+  outputType: replace_selection
+  path: commands/url_unescape.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Validate Syntax (W3C)
+  input: [document]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+V]
+  outputPath: null
+  outputType: show_as_html
+  path: commands/w3c_validation.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Wrap Each Selected Line in Open/Close Tag
+  input: [selection, line]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+SHIFT+COMMAND+W]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands/wrap_each_selected_line_in_open_close_tag.rb
+  runType: current_thread
+  scope: text.html
+  workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
@@ -1839,6 +1661,184 @@ children:
   runType: current_thread
   scope: text.html - source
   workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.ProjectTemplateElement
+  customProperties: {replace_parameters: false}
+  description: A basic template which includes only a default index.html file
+  displayName: Basic Web Template
+  location: templates/basic_web_template.zip
+  path: templates/project_templates.rb
+  scope: null
+  type: WEB
+- !!com.aptana.scripting.model.ProjectTemplateElement
+  customProperties: {replace_parameters: false}
+  description: Paul Irish's HTML5 Boilerplate (http://html5boilerplate.com/). Requires network access.
+  displayName: HTML5 Boilerplate
+  location: git://github.com/h5bp/html5-boilerplate.git
+  path: templates/project_templates.rb
+  scope: null
+  type: WEB
+- !!com.aptana.scripting.model.ProjectTemplateElement
+  customProperties: {replace_parameters: false}
+  description: Cached version of Paul Irish's HTML5 Boilerplate project for those without network access, current as of 2011-08-01.
+  displayName: HTML5 Boilerplate (Cached)
+  location: templates/html5_template.zip
+  path: templates/project_templates.rb
+  scope: null
+  type: WEB
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: HTML - 4.01 Strict Template (*.html)
+  filetype: '*.html'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: HTML - 4.01 Transitional Template (*.html)
+  filetype: '*.html'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: XHTML - 1.0 Strict Template (*.html)
+  filetype: '*.html'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: XHTML - 1.0 Strict Template (*.xhtml)
+  filetype: '*.xhtml'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: XHTML - 1.0 Transitional Template (*.html)
+  filetype: '*.html'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: XHTML - 1.0 Transitional Template (*.xhtml)
+  filetype: '*.xhtml'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: XHTML - 1.0 Frameset Template (*.html)
+  filetype: '*.html'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: XHTML - 1.0 Frameset Template (*.xhtml)
+  filetype: '*.xhtml'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: XHTML - 1.1 Template (*.html)
+  filetype: '*.html'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: XHTML - 1.1 Template (*.xhtml)
+  filetype: '*.xhtml'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: HTML 5 Template
+  filetype: '*.html'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
 copyright: Copyright 2011 Aptana. Distributed under the MIT license.
 customProperties: null
 decreaseIndentMarkers: {!scope 'text.html': !regexp "(?x-mi:\n    ^\\s*\n    (<\\\
@@ -1846,8 +1846,8 @@ decreaseIndentMarkers: {!scope 'text.html': !regexp "(?x-mi:\n    ^\\s*\n    (<\
     \    |\\}\n    ))"}
 description: Support for HTML, converted from TextMate.
 displayName: HTML
-fileTypeRegistry: {}
-fileTypes: []
+fileTypeRegistry: {'*.jsp': text.html.jsp}
+fileTypes: ['*.jsp']
 foldingStartMarkers: {!scope 'text.html': !regexp "(?x-mi:\n    (<(?i:body|div|dd|dl|embed|fieldset|form|frame|head|html|menu|object|ol|script|select|style|table|tbody|thead|tfoot|tr|ul)\\\
     b.*?>\n    |<!--(?!.*--\\s*>)\n    |^<!--\\ \\#tminclude\\ (?>.*?-->)$\n    |<\\\
     ?(?:php)?.*\\b(if|for(each)?|while)\\b.+:\n    |\\{\\{?(if|foreach|capture|literal|foreach|php|section|strip)\n\

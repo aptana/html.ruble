@@ -43,6 +43,7 @@ bundle do |bundle|
     |\}
     )/
   bundle.indent['text.html'] = increase_indent_pattern, decrease_indent_pattern
+  bundle.file_types['text.html.jsp'] = '*.jsp'
   
   # most commands install into a dedicated rails menu
   # See also the alternative, HAML-style syntax in menu.rrmenu
