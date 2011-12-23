@@ -25,17 +25,17 @@ template("HTML 5 Template") do |t|
   t.location = "templates/html5.html"
 end
 
-template("IDL Template") do |t|
-  t.filetype = "*.idl"
-  t.location = "templates/template.idl"
-end
+#template("IDL Template") do |t|
+#  t.filetype = "*.idl"
+#  t.location = "templates/template.idl"
+#end
 
-template("DTD Template") do |t|
-  t.filetype = "*.dtd"
-  t.location = "templates/template.dtd"
-end
+#template("DTD Template") do |t|
+#  t.filetype = "*.dtd"
+#  t.location = "templates/template.dtd"
+#end
 
-template("SVG Template") do |t|
-  t.filetype = "*.svg"
-  t.location = "templates/template.svg"
-end
+#template("SVG Template") do |t|
+#  t.filetype = "*.svg"
+#  t.location = "templates/template.svg"
+#end
