@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Help: Persistent Includes' do |cmd|
+command t(:help_persistent_includes) do |cmd|
   cmd.scope = 'text.html'
   cmd.output = :show_as_html
   cmd.input = :none

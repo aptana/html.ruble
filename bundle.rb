@@ -3,7 +3,7 @@ require 'ruble'
 bundle do |bundle|
   bundle.author = 'Christopher Williams'
   bundle.copyright = "Copyright 2011 Aptana. Distributed under the MIT license."
-  bundle.display_name = 'HTML'
+  bundle.display_name = t(:bundle_name)
   bundle.description = 'Support for HTML, converted from TextMate.'
   bundle.repository = "git://github.com/aptana/html.ruble.git"
 
@@ -47,89 +47,89 @@ bundle do |bundle|
   
   # most commands install into a dedicated rails menu
   # See also the alternative, HAML-style syntax in menu.rrmenu
-  bundle.menu "HTML" do |menu|
+  bundle.menut(:bundle_name) do |menu|
     # this menu should be shown when any of the following scopes is active:
     menu.scope = [ "text.html" ]
     
-    menu.command 'Documentation for Tag'
-    menu.command 'Validate Syntax (W3C)'
+    menu.command t(:docs_for_tag)
+    menu.command t(:validate_syntax)
     menu.separator
-    menu.command 'Open Document in Internal Browser'
-    menu.command 'Open Document in Default Browser'
-    menu.command 'Open Document in Running Browser(s)'
-    menu.command 'Refresh Running Browser(s)'
+    menu.command t(:open_doc_in_internal_browser)
+    menu.command t(:open_doc_in_default_browser)
+    menu.command t(:open_doc_in_running_browser)
+    menu.command t(:refresh_running_browsers)
     menu.separator
-    menu.menu 'Entities' do |entities|
-      entities.command 'Convert Character / Selection to Entities'
-      entities.command 'Convert Character / Selection to Entities Excl. Tags'
-      entities.command 'Decode Entities in Line / Selection'
+    menu.menu t(:entities) do |entities|
+      entities.command t(:convert_to_entities)
+      entities.command t(:convert_to_entities_excluding_tags)
+      entities.command t(:decode_entities)
       entities.separator
-      entities.command 'Non-Breaking Space'
-      entities.command 'right'
-      entities.command 'left'
-      entities.command 'backtab'
-      entities.command 'enter'
-      entities.command 'control'
-      entities.command 'delete'
-      entities.command 'return'
-      entities.command 'tab'
-      entities.command 'backspace'
-      entities.command 'command'
-      entities.command 'down'
-      entities.command 'arrow'
-      entities.command 'up'
-      entities.command 'shift'
-      entities.command 'escape'
-      entities.command 'option'
+      entities.command t(:nbsp)
+      entities.command t(:right)
+      entities.command t(:left)
+      entities.command t(:backtab)
+      entities.command t(:enter)
+      entities.command t(:control)
+      entities.command t(:delete)
+      entities.command t(:return)
+      entities.command t(:tab)
+      entities.command t(:backspace)
+      entities.command t(:command)
+      entities.command t(:down)
+      entities.command t(:arrow)
+      entities.command t(:up)
+      entities.command t(:shift)
+      entities.command t(:escape)
+      entities.command t(:option)
       entities.separator
-      entities.command 'Insert Entity...'
+      entities.command t(:insert_entity)
     end
-    menu.menu 'URL Escapes' do |escapes|
-      escapes.command 'URL Escape Line / Selection'
-      escapes.command 'URL Unescape Line / Selection'
+    menu.menu t(:url_escapes) do |escapes|
+      escapes.command t(:url_escape)
+      escapes.command t(:url_unescape)
     end
-    menu.command 'Encrypt Line / Selection (ROT 13)'
+    menu.command t(:rot_13)
     menu.separator
-    menu.command 'Insert Open/Close Tag (With Current Word)'
-    menu.command 'Insert Close Tag'
-    menu.menu 'Insert DocType' do |doctype|
-      doctype.command 'HTML - 4.01 Strict'
-      doctype.command 'HTML - 4.01 Transitional'
+    menu.command t(:insert_tag_pair)
+    menu.command t(:insert_close_tag)
+    menu.menu t(:insert_doctype) do |doctype|
+      doctype.command t(:html_4_strict)
+      doctype.command t(:html_4_transitional)
       doctype.separator
-      doctype.command 'XHTML - 1.0 Frameset'
-      doctype.command 'XHTML - 1.0 Strict'
-      doctype.command 'XHTML - 1.0 Transitional'
-      doctype.command 'XHTML - 1.1'
+      doctype.command t(:xhtml_1_frameset)
+      doctype.command t(:xhtml_1_strict)
+      doctype.command t(:xhtml_1_transitional)
+      doctype.command t(:xhtml_11)
     end
     menu.separator
-    menu.menu 'Includes' do |includes|
-      includes.command 'Add Persistent Include'
-      includes.command 'Update Document'
-      includes.command 'Help: Persistent Includes'
+    menu.menu t(:includes) do |includes|
+      includes.command t(:add_persistent_include)
+      includes.command t(:update_document)
+      includes.command t(:help_persistent_includes)
     end
-    menu.menu 'Format' do |format|
-      format.command 'Strong'
-      format.command 'Emphasize'
+    menu.menu t(:format) do |format|
+      format.command t(:strong)
+      format.command t(:emphasize)
     end
-    menu.menu 'Conditional Comments' do |comments|
-      comments.command 'IE Conditional Comment: Internet Explorer 5.0 only'
-      comments.command 'IE Conditional Comment: Internet Explorer 5.5 only'
-      comments.command 'IE Conditional Comment: Internet Explorer 5.x'
-      comments.command 'IE Conditional Comment: Internet Explorer 6 and below'
-      comments.command 'IE Conditional Comment: Internet Explorer 6 only'
-      comments.command 'IE Conditional Comment: Internet Explorer 7 and above'
-      comments.command 'IE Conditional Comment: Internet Explorer'
-      comments.command 'IE Conditional Comment: NOT Internet Explorer'
+    menu.menu t(:conditional_comments) do |comments|
+      comments.command t(:ie_5)
+      comments.command t(:ie_55)
+      comments.command t(:ie_5x)
+      comments.command t(:ie_6_and_below)
+      comments.command t(:ie_6)
+      comments.command t(:ie_7_and_above)
+      comments.command t(:ie)
+      comments.command t(:not_ie)
     end
     menu.separator
-    menu.command 'Select Tag Pair and Content'
-    menu.command 'Select Tag Content'
+    menu.command t(:select_tag_pair_and_content)
+    menu.command t(:select_tag_content)
     menu.separator
-    menu.command 'Wrap Selection in Open/Close Tag'
-    menu.command 'Wrap Each Selected Line in Open/Close Tag'
-    menu.command 'Wrap in <?= ... ?>'
+    menu.command t(:wrap_selection_in_tag_pair)
+    menu.command t(:wrap_lines_in_tag_pairs)
+    menu.command t(:wrap_in_jsp_tag)
     menu.separator
-    menu.command 'Strip HTML Tags from Document / Selection'
+    menu.command t(:strip_html_tags)
   end
 end
 

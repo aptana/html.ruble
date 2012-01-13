@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Open Document in Default Browser' do |cmd|
+command t(:open_doc_in_default_browser) do |cmd|
   cmd.key_binding = "M1+M2+P"
   cmd.scope = 'text.html'
   cmd.output = :discard

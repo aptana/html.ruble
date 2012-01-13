@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Decode Entities in Line / Selection' do |cmd|
+command t(:decode_entities) do |cmd|
   cmd.key_binding = 'M1+M2+7'
   cmd.scope = 'text.html'
   cmd.output = :replace_selection

@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Validate Syntax (W3C)' do |cmd|
+command t(:validate_syntax) do |cmd|
   cmd.key_binding = 'CONTROL+M2+V'
   cmd.scope = 'text.html'
   cmd.output = :show_as_html

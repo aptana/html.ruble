@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Open Document in Internal Browser' do |cmd|
+command t(:open_doc_in_internal_browser) do |cmd|
   cmd.scope = 'text.html'
   cmd.output = :show_as_html
   cmd.input = :document
