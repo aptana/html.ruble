@@ -446,11 +446,11 @@ children:
   displayName: HTML
   path: bundle.rb
   scope: text.html
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-b4b2f955-fbee-4f58-987d-d423b63d1da5,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-ce0dadb2-dbcb-4caa-b11e-2042c84cde93,
   path: bundle.rb, scope: text.html}
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-c49b6427-b45a-4bb1-93a5-5088e55f1654
+  displayName: smart_typing_pairs-6076f7cb-c190-4521-b364-977b97bd6a7e
   pairs: ['"', '"', (, ), '{', '}', '[', ']', '''', '''']
   path: bundle.rb
   scope: text.html meta.tag - punctuation.definition.tag.begin
@@ -795,7 +795,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.CommandElement
   async: false
@@ -809,7 +809,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -824,7 +824,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -839,7 +839,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -854,7 +854,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -869,7 +869,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -884,7 +884,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -899,7 +899,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -915,7 +915,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -931,7 +931,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -947,7 +947,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -963,7 +963,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -979,7 +979,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -994,7 +994,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1015,7 +1015,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1030,7 +1030,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1045,7 +1045,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1061,7 +1061,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1079,7 +1079,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1094,7 +1094,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1109,7 +1109,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1124,7 +1124,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1139,7 +1139,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1154,7 +1154,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1169,7 +1169,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1183,7 +1183,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1198,7 +1198,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1213,7 +1213,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1228,7 +1228,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1243,7 +1243,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1258,7 +1258,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1273,7 +1273,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1288,7 +1288,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1303,7 +1303,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1318,7 +1318,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1333,7 +1333,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1348,7 +1348,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1363,7 +1363,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1378,7 +1378,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1394,7 +1394,7 @@ children:
   outputType: insert_as_snippet
   path: snippets/snippets.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.CommandElement
   async: false
