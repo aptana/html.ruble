@@ -47,7 +47,7 @@ bundle do |bundle|
   
   # most commands install into a dedicated rails menu
   # See also the alternative, HAML-style syntax in menu.rrmenu
-  bundle.menut(:bundle_name) do |menu|
+  bundle.menu t(:bundle_name) do |menu|
     # this menu should be shown when any of the following scopes is active:
     menu.scope = [ "text.html" ]
     
