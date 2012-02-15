@@ -7,7 +7,7 @@ HTML_TEMPLATES = {
   'transitional_1_0.xhtml' => 'XHTML - 1.0 Transitional',
   'frameset_1_0.xhtml' => 'XHTML - 1.0 Frameset',
   '1_1.xhtml' => 'XHTML - 1.1'
-}
+} unless defined?(HTML_TEMPLATES)
 
 HTML_TEMPLATES.each do |filename, name|
   filetypes = ["*.html"]

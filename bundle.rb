@@ -8,7 +8,7 @@ bundle do |bundle|
   bundle.repository = "git://github.com/aptana/html.ruble.git"
 
   # Folding
-  BLOCK_TAGS = 'body|div|dd|dl|embed|fieldset|form|frame|head|html|menu|object|ol|script|select|style|table|tbody|thead|tfoot|tr|ul'
+  BLOCK_TAGS = 'body|div|dd|dl|embed|fieldset|form|frame|head|html|menu|object|ol|script|select|style|table|tbody|thead|tfoot|tr|ul' unless defined?(BLOCK_TAGS)
   start_folding = /(?x)
     (<(?i:#{BLOCK_TAGS})\b.*?>
     |<!--(?!.*--\s*>)
