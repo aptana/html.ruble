@@ -670,7 +670,7 @@ children:
   outputType: discard
   path: commands/select_tag_contents.rb
   runType: current_thread
-  scope: text.html
+  scope: text.html - source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.CommandElement
   async: false
