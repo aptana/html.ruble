@@ -1,12 +1,12 @@
 require 'ruble'
 
-with_defaults :scope => 'text.html' do |bundle|
+with_defaults :scope => 'text.html - source' do |bundle|
 
 command 'Quick BR' do |cmd|
   cmd.key_binding = 'M1+ENTER'
   cmd.output = :insert_as_snippet
   cmd.input = :none
-  cmd.invoke { "<br/>\n" }
+  cmd.invoke { "<br />" }
 end
 
 command 'Quick HTML space' do |cmd|
