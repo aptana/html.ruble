@@ -2,7 +2,7 @@ require 'ruble'
 
 command 'Select Tag Content' do |cmd|
   cmd.key_binding = 'CONTROL+M2+/'
-  cmd.scope = 'text.html'
+  cmd.scope = 'text.html - source'
   cmd.output = :discard
   cmd.input = :none
   cmd.invoke do |context|
