@@ -1,7 +1,7 @@
 require 'ruble'
 require 'ruble/ui'
 
-command 'Insert Entity...' do |cmd|
+command t(:insert_entity) do |cmd|
   cmd.key_binding = 'M1+M2+7'
   cmd.scope = 'text.html'
   cmd.output = :insert_as_text

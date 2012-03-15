@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'URL Escape Line / Selection' do |cmd|
+command t(:url_escape) do |cmd|
   cmd.key_binding = 'M1+M2+7'
   cmd.scope = 'text.html'
   cmd.output = :replace_selection

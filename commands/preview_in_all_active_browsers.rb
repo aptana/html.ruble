@@ -10,7 +10,7 @@ require 'ruble'
 # 
 # Options: Set TM_PROJECT_SITEURL in your TM Project Window Info Button
 # in the following form: "http://example.com/"
-command 'Open Document in Running Browser(s)' do |cmd|
+command t(:open_doc_in_running_browser) do |cmd|
   cmd.scope = 'text.html'
   cmd.output = :discard
   cmd.input = :none
