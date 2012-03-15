@@ -86,7 +86,7 @@ snippet t(:down) do |s|
   s.expansion = '&#x2193;'
 end
 
-snippet 'Embed QT Movie' do |s|
+snippet t(:embed_qt_movie) do |s|
   s.trigger = 'movie'
   s.expansion = '<object width="${2:320}" height="${3:240}" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
 	<param name="src" value="${1:movie.mov}"/>

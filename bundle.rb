@@ -4,7 +4,7 @@ bundle do |bundle|
   bundle.author = 'Christopher Williams'
   bundle.copyright = "Copyright 2011 Aptana. Distributed under the MIT license."
   bundle.display_name = t(:bundle_name)
-  bundle.description = 'Support for HTML, converted from TextMate.'
+  bundle.description = t(:bundle_description)
   bundle.repository = "git://github.com/aptana/html.ruble.git"
 
   # Folding

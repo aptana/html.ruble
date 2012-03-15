@@ -1,5 +1,6 @@
 en:
   bundle_name: 'HTML'
+  bundle_description: 'Support for HTML, converted from TextMate.'
   docs_for_tag: 'Documentation for Tag'
   validate_syntax: 'Validate Syntax (W3C)'
   open_doc_in_internal_browser: 'Open Document in Internal Browser'
@@ -63,3 +64,12 @@ en:
   wrap_lines_in_tag_pairs: 'Wrap Each Selected Line in Open/Close Tag'
   wrap_in_jsp_tag: 'Wrap in <?= ... ?>'
   strip_html_tags: 'Strip HTML Tags from Document / Selection'
+  embed_qt_movie: 'Embed QT Movie'
+  html_file_template_name: "%{name} Template (%{filetype})"
+  basic_web_template_name: "Basic Web Template"
+  basic_web_template_desc: "A basic template which includes only a default index.html file"
+  html5_file_template_name: "HTML 5 Template"
+  html5_template_name: "HTML5 Boilerplate"
+  html5_template_desc: "Paul Irish's HTML5 Boilerplate (http://html5boilerplate.com/). Requires network access."
+  cached_html5_template_name: "HTML5 Boilerplate (Cached)"
+  cached_html5_template_desc: "Cached version of Paul Irish's HTML5 Boilerplate project for those without network access, current as of 2011-08-01."
