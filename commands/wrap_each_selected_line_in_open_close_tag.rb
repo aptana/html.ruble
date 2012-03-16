@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Wrap Each Selected Line in Open/Close Tag' do |cmd|
+command t(:wrap_lines_in_tag_pairs) do |cmd|
   cmd.key_binding = 'CONTROL+SHIFT+COMMAND+W' # FIXME This is mac specific
   cmd.scope = 'text.html'
   cmd.output = :insert_as_snippet

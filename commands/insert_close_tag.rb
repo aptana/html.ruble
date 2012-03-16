@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Insert Close Tag' do |cmd|
+command t(:insert_close_tag) do |cmd|
   cmd.output = :insert_as_text
   cmd.input = :none
   cmd.invoke do |context|

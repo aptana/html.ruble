@@ -1,7 +1,7 @@
 require 'ruble'
 
 # Lookup current word as a tag name on w3c.org
-command 'Documentation for Tag' do |cmd|
+command t(:docs_for_tag) do |cmd|
   cmd.key_binding = 'CONTROL+M2+H'
   cmd.scope = 'text.html, text.html entity.name.tag'
   cmd.output = :show_as_html

@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Strip HTML Tags from Document / Selection' do |cmd|
+command t(:strip_html_tags) do |cmd|
   cmd.scope = 'text.html'
   cmd.output = :replace_selection
   cmd.input = :selection, :document

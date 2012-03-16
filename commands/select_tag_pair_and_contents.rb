@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Select Tag Pair and Content' do |cmd|
+command t(:select_tag_pair_and_content) do |cmd|
   cmd.key_binding = 'CONTROL+M2+.'
   cmd.scope = 'text.html'
   cmd.output = :discard

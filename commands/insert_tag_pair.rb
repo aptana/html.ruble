@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Insert Open/Close Tag (With Current Word)' do |cmd|
+command t(:insert_tag_pair) do |cmd|
   cmd.key_binding = 'CONTROL+M2+,'
   cmd.output = :insert_as_snippet
   cmd.input = :selection, :word

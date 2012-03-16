@@ -1,6 +1,6 @@
 require 'ruble'
     
-command 'Convert Character / Selection to Entities Excl. Tags' do |cmd|
+command t(:convert_to_entities_excluding_tags) do |cmd|
   cmd.key_binding = 'M1+M2+7'
   cmd.scope = 'text.html'
   cmd.output = :replace_selection
