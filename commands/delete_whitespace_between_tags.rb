@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Forward Delete All Whitespace' do |cmd|
+command t(:delete_whitespace_between_tags) do |cmd|
   cmd.key_binding = 'Control+Option+Delete'
   cmd.scope = 'text.html'
   cmd.output = :replace_selection
