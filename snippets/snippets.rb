@@ -2,14 +2,14 @@ require 'ruble'
 
 with_defaults :scope => 'text.html - source' do |bundle|
 
-command 'Quick BR' do |cmd|
+command t(:quick_br) do |cmd|
   cmd.key_binding = 'M1+ENTER'
   cmd.output = :insert_as_snippet
   cmd.input = :none
   cmd.invoke { "<br />" }
 end
 
-command 'Quick HTML space' do |cmd|
+command t(:quick_html_space) do |cmd|
   cmd.key_binding = 'M1+M2+SPACE'
   cmd.output = :insert_as_snippet
   cmd.input = :none
@@ -134,7 +134,7 @@ snippet t(:option) do |s|
   s.expansion = '&#x2325;'
 end
 
-snippet 'Option' do |s|
+snippet t(:option) do |s|
   s.trigger = 'opt'
   s.expansion = '<option value="${1:option}">${1:option}</option>'
 end
@@ -164,11 +164,11 @@ snippet t(:shift) do |s|
 end
 
 # FIXME No tab trigger, probably needs to become command
-snippet 'Special: Return Inside Empty Open/Close Tags' do |s|
-  s.expansion = '
-	$0
-'
-end
+# snippet 'Special: Return Inside Empty Open/Close Tags' do |s|
+  # s.expansion = '
+	# $0
+# '
+# end
 
 snippet t(:tab) do |s|
   s.trigger = 'tab'
@@ -195,7 +195,7 @@ snippet t(:nbsp) do |s|
   s.expansion = '&nbsp;'
 end
 
-snippet 'Mail Anchor' do |s|
+snippet t(:mail_anchor) do |s|
   s.trigger = 'mailto'
   s.expansion = '<a href="mailto:${1:joe@example.com}?subject=${2:feedback}">${3:email me}</a>'
 end
@@ -220,7 +220,7 @@ snippet 'Meta' do |s|
   s.expansion = '<meta name="${1:name}" content="${2:content}"/>'
 end
 
-snippet 'Script With External Source' do |s|
+snippet t(:script_w_external_source) do |s|
   s.trigger = 'scriptsrc'
   s.expansion = '<script src="$1" type="text/javascript" charset="${3:utf-8}"></script>'
 end
@@ -414,7 +414,7 @@ with_defaults :scope => 'text.html - source', :input => :none, :output => :inser
     end
   end
 
-  command 'Heading' do |cmd|
+  command t(:heading) do |cmd|
     cmd.trigger = 'h1'
     cmd.invoke do |context|
       selection = ENV['TM_SELECTED_TEXT'] || ''

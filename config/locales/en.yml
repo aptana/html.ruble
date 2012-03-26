@@ -73,3 +73,11 @@ en:
   html5_template_desc: "Paul Irish's HTML5 Boilerplate (http://html5boilerplate.com/). Requires network access."
   cached_html5_template_name: "HTML5 Boilerplate (Cached)"
   cached_html5_template_desc: "Cached version of Paul Irish's HTML5 Boilerplate project for those without network access, current as of 2011-08-01."
+  delete_whitespace_between_tags: 'Forward Delete All Whitespace'
+  tidy: 'Tidy'
+  quick_br: 'Quick BR'
+  quick_html_space: 'Quick HTML space'
+  script_w_external_source: 'Script With External Source'
+  mail_anchor: 'Mail Anchor'
+  heading: 'Heading'
+  

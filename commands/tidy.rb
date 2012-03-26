@@ -1,7 +1,7 @@
 require 'ruble'
 require 'ruble/ui'
 
-command 'Tidy' do |cmd|
+command t(:tidy) do |cmd|
   cmd.key_binding = 'CONTROL+M2+H'
   cmd.scope = 'text.html'
   # Port using online tidy
