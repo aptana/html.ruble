@@ -1,6 +1,6 @@
 require 'ruble'
 
-with_defaults :scope => 'text.html - source' do |bundle|
+with_defaults :scope => 'text.html - (source | string)' do |bundle|
 
 command t(:quick_br) do |cmd|
   cmd.key_binding = 'M1+ENTER'
