@@ -14,8 +14,18 @@ command t(:validate_syntax) do |cmd|
     
     require 'net/http'
     require 'uri'
-    
-    response = Net::HTTP.post_form(URI.parse(w3c_url), {'ss' => "1", 'fragment' => page})
+
+#fix for w3c blocking http requests without a user-agent
+#changed the way the http post is sent to w3c so that it includes a user-agent
+
+uri = URI(w3c_url)
+req = Net::HTTP::Post.new(uri.path)
+req.set_form_data({'ss' => "1", 'fragment' => page})
+req['User-Agent'] = 'Aptana'
+
+response = Net::HTTP.start(uri.host, uri.port) do |http|
+  http.request(req)
+end
     status = response['x-w3c-validator-status']
     
     content = response.body
